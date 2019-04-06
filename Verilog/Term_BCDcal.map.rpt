@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Term_BCDcal
-Sat Apr 06 13:00:29 2019
+Sat Apr 06 13:42:23 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -15,9 +15,8 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Parameter Settings for User Entity Instance: Top-level Entity: |Term_BCDcal
- 10. Port Connectivity Checks: "Calculator:cal|Full_Adder:fulladd2"
- 11. Port Connectivity Checks: "Calculator:cal|Full_Adder:fulladd1"
- 12. Analysis & Synthesis Messages
+ 10. Port Connectivity Checks: "Calculator:cal|Full_Adder:fulladd1"
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +42,16 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 06 13:00:29 2019        ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 06 13:42:23 2019        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; Term_BCDcal                                  ;
 ; Top-level Entity Name              ; Term_BCDcal                                  ;
 ; Family                             ; Cyclone IV E                                 ;
-; Total logic elements               ; 78                                           ;
-;     Total combinational functions  ; 78                                           ;
+; Total logic elements               ; 90                                           ;
+;     Total combinational functions  ; 90                                           ;
 ;     Dedicated logic registers      ; 0                                            ;
 ; Total registers                    ; 0                                            ;
-; Total pins                         ; 67                                           ;
+; Total pins                         ; 59                                           ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0                                            ;
 ; Embedded Multiplier 9-bit elements ; 0                                            ;
@@ -166,27 +165,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 78           ;
+; Estimated Total logic elements              ; 90           ;
 ;                                             ;              ;
-; Total combinational functions               ; 78           ;
+; Total combinational functions               ; 90           ;
 ; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 66           ;
-;     -- 3 input functions                    ; 6            ;
+;     -- 4 input functions                    ; 69           ;
+;     -- 3 input functions                    ; 15           ;
 ;     -- <=2 input functions                  ; 6            ;
 ;                                             ;              ;
 ; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 78           ;
+;     -- normal mode                          ; 90           ;
 ;     -- arithmetic mode                      ; 0            ;
 ;                                             ;              ;
 ; Total registers                             ; 0            ;
 ;     -- Dedicated logic registers            ; 0            ;
 ;     -- I/O registers                        ; 0            ;
 ;                                             ;              ;
-; I/O pins                                    ; 67           ;
+; I/O pins                                    ; 59           ;
 ; Maximum fan-out node                        ; SW[16]~input ;
-; Maximum fan-out                             ; 15           ;
-; Total fan-out                               ; 404          ;
-; Average fan-out                             ; 1.91         ;
+; Maximum fan-out                             ; 16           ;
+; Total fan-out                               ; 434          ;
+; Average fan-out                             ; 2.09         ;
 +---------------------------------------------+--------------+
 
 
@@ -195,10 +194,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
 ; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Library Name ;
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
-; |Term_BCDcal                ; 78 (62)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 67   ; 0            ; |Term_BCDcal                                    ; work         ;
-;    |Calculator:cal|         ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Term_BCDcal|Calculator:cal                     ;              ;
-;       |Full_Adder:fulladd1| ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1 ;              ;
-;       |Full_Adder:fulladd2| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2 ;              ;
+; |Term_BCDcal                ; 90 (72)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 59   ; 0            ; |Term_BCDcal                                    ; work         ;
+;    |Calculator:cal|         ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Term_BCDcal|Calculator:cal                     ;              ;
+;       |Full_Adder:fulladd1| ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1 ;              ;
+;       |Full_Adder:fulladd2| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2 ;              ;
 +-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -233,17 +232,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Seg2           ; 0010010 ; Unsigned Binary                                  ;
 ; Seg1           ; 1001111 ; Unsigned Binary                                  ;
 ; Seg0           ; 0000001 ; Unsigned Binary                                  ;
+; SegErr         ; 1111111 ; Unsigned Binary                                  ;
 +----------------+---------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Calculator:cal|Full_Adder:fulladd2"                                                  ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; c_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------+
@@ -261,7 +252,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Apr 06 13:00:27 2019
+    Info: Processing started: Sat Apr 06 13:42:21 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Term_BCDcal -c Term_BCDcal
 Info: Found 4 design units, including 4 entities, in source file term_bcdcal.v
     Info: Found entity 1: Term_BCDcal
@@ -271,25 +262,16 @@ Info: Found 4 design units, including 4 entities, in source file term_bcdcal.v
 Info: Elaborating entity "Term_BCDcal" for the top level hierarchy
 Warning (10858): Verilog HDL warning at Term_BCDcal.v(13): object conv_right used but never assigned
 Warning (10030): Net "conv_right" at Term_BCDcal.v(13) has no driver or initial value, using a default initial value '0'
-Warning (10034): Output port "LEDG[5..0]" at Term_BCDcal.v(7) has no driver
 Info: Elaborating entity "Calculator" for hierarchy "Calculator:cal"
 Info: Elaborating entity "Full_Adder" for hierarchy "Calculator:cal|Full_Adder:fulladd1"
-Warning: Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDG[0]" is stuck at GND
-    Warning (13410): Pin "LEDG[1]" is stuck at GND
-    Warning (13410): Pin "LEDG[2]" is stuck at GND
-    Warning (13410): Pin "LEDG[3]" is stuck at GND
-    Warning (13410): Pin "LEDG[4]" is stuck at GND
-    Warning (13410): Pin "LEDG[5]" is stuck at GND
-    Warning (13410): Pin "LEDG[7]" is stuck at VCC
 Info: Timing-Driven Synthesis is running
-Info: Implemented 145 device resources after synthesis - the final resource count might be different
+Info: Implemented 149 device resources after synthesis - the final resource count might be different
     Info: Implemented 17 input pins
-    Info: Implemented 50 output pins
-    Info: Implemented 78 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Implemented 42 output pins
+    Info: Implemented 90 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 248 megabytes
-    Info: Processing ended: Sat Apr 06 13:00:29 2019
+    Info: Processing ended: Sat Apr 06 13:42:23 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

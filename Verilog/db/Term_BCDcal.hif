@@ -31,7 +31,7 @@ ON
 # case_sensitive
 # source_file
 term_bcdcal.v
-86e14e3d79b024cf17e6159e62a3abb8
+1cad945399914bb55777f2d36a18cda
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -90,6 +90,10 @@ Seg0
 0000001
 PARAMETER_UNSIGNED_BIN
 DEF
+SegErr
+1111111
+PARAMETER_UNSIGNED_BIN
+DEF
 }
 # hierarchies {
 |
@@ -109,7 +113,7 @@ ON
 # case_sensitive
 # source_file
 term_bcdcal.v
-86e14e3d79b024cf17e6159e62a3abb8
+1cad945399914bb55777f2d36a18cda
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -145,7 +149,7 @@ ON
 # case_sensitive
 # source_file
 term_bcdcal.v
-86e14e3d79b024cf17e6159e62a3abb8
+1cad945399914bb55777f2d36a18cda
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
