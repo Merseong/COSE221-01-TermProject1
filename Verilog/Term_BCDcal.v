@@ -1,20 +1,20 @@
-module Term_BCDcal(SW, HEX0, HEX1, HEX4, HEX5, HEX6, HEX7);
+module Term_BCDcal(SW, HEX0, HEX1, HEX4, HEX5, HEX6, HEX7, LEDG);
 
 	input [16:0] SW; // 16: mode select, 15:8: left num, 7:0: right num, 
 	output reg [0:6] HEX0, HEX1; // output segment
 	output reg [0:6] HEX4, HEX5; // right segment
 	output reg [0:6] HEX6, HEX7; // left segment
+	output [7:0] LEDG;
 	parameter Seg9 = 7'b000_1100; parameter Seg8 = 7'b000_0000; parameter Seg7 = 7'b000_1111; parameter Seg6 = 7'b010_0000; parameter Seg5 = 7'b010_0100;
 	parameter Seg4 = 7'b100_1100; parameter Seg3 = 7'b000_0110; parameter Seg2 = 7'b001_0010; parameter Seg1 = 7'b100_1111; parameter Seg0 = 7'b000_0001;
 	
 	reg [7:0] left, right;
 	wire [7:0] out;
 	reg [7:0] conv_right;
-	wire c_out;
-	reg c_in;
 	
 	//Convert conv (SW[7:0], conv_right);
-	Calculator cal (out, left, right);
+	Calculator cal (out, left, right, LEDG[6]);
+	assign LEDG[7] = 1'b1;
 	
 	always@(*)
 	begin
@@ -62,13 +62,16 @@ module Term_BCDcal(SW, HEX0, HEX1, HEX4, HEX5, HEX6, HEX7);
 endmodule
 
 // calculate whatever it is
-module Calculator(outBCD, leftBCD, rightBCD);
+module Calculator(outBCD, leftBCD, rightBCD, LED);
 
 	input [7:0] leftBCD, rightBCD;
 	output [7:0] outBCD;
-	wire c_out;
+	output LED;
+	wire c_out0, c_out1;
 	
-	Full_Adder fulladd(outBCD[3:0], c_out, leftBCD[3:0], rightBCD[3:0], 1'b0);
+	Full_Adder fulladd1(outBCD[3:0], c_out0, leftBCD[3:0], rightBCD[3:0], 1'b0);
+	assign LED = c_out0;
+	Full_Adder fulladd2(outBCD[7:4], c_out1, leftBCD[7:4], rightBCD[7:4], c_out0);
 	
 endmodule
 
@@ -78,7 +81,7 @@ module Full_Adder(sumBCD, c_out, leftBCD, rightBCD, c_in);
 	input [3:0] leftBCD, rightBCD;
 	input c_in;
 	output reg [3:0] sumBCD;
-	output wire c_out;
+	output reg c_out;
 	wire [2:0] car; // carry
 	wire [3:0] temp_out;
 	
@@ -92,18 +95,38 @@ module Full_Adder(sumBCD, c_out, leftBCD, rightBCD, c_in);
 	assign car[2] = ((leftBCD[2] ^ rightBCD[2]) & car[1]) | (leftBCD[2] & rightBCD[2]);
 	
 	assign temp_out[3] = leftBCD[3] ^ rightBCD[3] ^ car[2];
-	assign c_out = ((leftBCD[3] ^ rightBCD[3]) & car[2]) | (leftBCD[3] & rightBCD[3]);
 	
 	always@(*)
 	begin
 		case(temp_out)
-			4'b1010: sumBCD = 4'b0000;
-			4'b1011: sumBCD = 4'b0001;
-			4'b1100: sumBCD = 4'b0010;
-			4'b1101: sumBCD = 4'b0011;
-			4'b1110: sumBCD = 4'b0100;
-			4'b1111: sumBCD = 4'b0101;
-			default: sumBCD = temp_out;
+			4'b1010: begin
+				sumBCD = 4'b0000;
+				c_out = 1'b1;
+				end
+			4'b1011: begin
+				sumBCD = 4'b0001;
+				c_out = 1'b1;
+				end
+			4'b1100: begin
+				sumBCD = 4'b0010;
+				c_out = 1'b1;
+				end
+			4'b1101: begin
+				sumBCD = 4'b0011;
+				c_out = 1'b1;
+				end
+			4'b1110: begin
+				sumBCD = 4'b0100;
+				c_out = 1'b1;
+				end
+			4'b1111: begin
+				sumBCD = 4'b0101;
+				c_out = 1'b1;
+				end
+			default: begin
+				sumBCD = temp_out;
+				c_out = ((leftBCD[3] ^ rightBCD[3]) & car[2]) | (leftBCD[3] & rightBCD[3]);
+				end
 		endcase
 	end
 	

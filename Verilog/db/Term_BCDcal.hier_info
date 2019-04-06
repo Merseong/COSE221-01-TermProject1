@@ -66,36 +66,71 @@ HEX7[3] <= WideOr38.DB_MAX_OUTPUT_PORT_TYPE
 HEX7[2] <= WideOr37.DB_MAX_OUTPUT_PORT_TYPE
 HEX7[1] <= WideOr36.DB_MAX_OUTPUT_PORT_TYPE
 HEX7[0] <= WideOr35.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[0] <= <GND>
+LEDG[1] <= <GND>
+LEDG[2] <= <GND>
+LEDG[3] <= <GND>
+LEDG[4] <= <GND>
+LEDG[5] <= <GND>
+LEDG[6] <= Calculator:cal.port3
+LEDG[7] <= <VCC>
 
 
 |Term_BCDcal|Calculator:cal
-outBCD[0] <= Full_Adder:fulladd.port0
-outBCD[1] <= Full_Adder:fulladd.port0
-outBCD[2] <= Full_Adder:fulladd.port0
-outBCD[3] <= Full_Adder:fulladd.port0
-outBCD[4] <= <GND>
-outBCD[5] <= <GND>
-outBCD[6] <= <GND>
-outBCD[7] <= <GND>
+outBCD[0] <= Full_Adder:fulladd1.port0
+outBCD[1] <= Full_Adder:fulladd1.port0
+outBCD[2] <= Full_Adder:fulladd1.port0
+outBCD[3] <= Full_Adder:fulladd1.port0
+outBCD[4] <= Full_Adder:fulladd2.port0
+outBCD[5] <= Full_Adder:fulladd2.port0
+outBCD[6] <= Full_Adder:fulladd2.port0
+outBCD[7] <= Full_Adder:fulladd2.port0
 leftBCD[0] => leftBCD[0].IN1
 leftBCD[1] => leftBCD[1].IN1
 leftBCD[2] => leftBCD[2].IN1
 leftBCD[3] => leftBCD[3].IN1
-leftBCD[4] => ~NO_FANOUT~
-leftBCD[5] => ~NO_FANOUT~
-leftBCD[6] => ~NO_FANOUT~
-leftBCD[7] => ~NO_FANOUT~
+leftBCD[4] => leftBCD[4].IN1
+leftBCD[5] => leftBCD[5].IN1
+leftBCD[6] => leftBCD[6].IN1
+leftBCD[7] => leftBCD[7].IN1
 rightBCD[0] => rightBCD[0].IN1
 rightBCD[1] => rightBCD[1].IN1
 rightBCD[2] => rightBCD[2].IN1
 rightBCD[3] => rightBCD[3].IN1
-rightBCD[4] => ~NO_FANOUT~
-rightBCD[5] => ~NO_FANOUT~
-rightBCD[6] => ~NO_FANOUT~
-rightBCD[7] => ~NO_FANOUT~
+rightBCD[4] => rightBCD[4].IN1
+rightBCD[5] => rightBCD[5].IN1
+rightBCD[6] => rightBCD[6].IN1
+rightBCD[7] => rightBCD[7].IN1
+LED <= c_out0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Term_BCDcal|Calculator:cal|Full_Adder:fulladd
+|Term_BCDcal|Calculator:cal|Full_Adder:fulladd1
+sumBCD[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+sumBCD[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+sumBCD[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+sumBCD[3] <= sumBCD.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out.DB_MAX_OUTPUT_PORT_TYPE
+leftBCD[0] => car.IN0
+leftBCD[0] => car.IN0
+leftBCD[1] => car.IN0
+leftBCD[1] => car.IN0
+leftBCD[2] => car.IN0
+leftBCD[2] => car.IN0
+leftBCD[3] => temp_out.IN0
+leftBCD[3] => c_out.IN0
+rightBCD[0] => car.IN1
+rightBCD[0] => car.IN1
+rightBCD[1] => car.IN1
+rightBCD[1] => car.IN1
+rightBCD[2] => car.IN1
+rightBCD[2] => car.IN1
+rightBCD[3] => temp_out.IN1
+rightBCD[3] => c_out.IN1
+c_in => temp_out[0].IN1
+c_in => car.IN1
+
+
+|Term_BCDcal|Calculator:cal|Full_Adder:fulladd2
 sumBCD[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 sumBCD[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 sumBCD[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE

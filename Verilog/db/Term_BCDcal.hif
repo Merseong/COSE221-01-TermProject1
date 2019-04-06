@@ -31,7 +31,7 @@ ON
 # case_sensitive
 # source_file
 term_bcdcal.v
-517f8fdd8fad4f6e53ecfaede0b31428
+86e14e3d79b024cf17e6159e62a3abb8
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -109,7 +109,7 @@ ON
 # case_sensitive
 # source_file
 term_bcdcal.v
-517f8fdd8fad4f6e53ecfaede0b31428
+86e14e3d79b024cf17e6159e62a3abb8
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -145,7 +145,7 @@ ON
 # case_sensitive
 # source_file
 term_bcdcal.v
-517f8fdd8fad4f6e53ecfaede0b31428
+86e14e3d79b024cf17e6159e62a3abb8
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -164,7 +164,8 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # hierarchies {
-Calculator:cal|Full_Adder:fulladd
+Calculator:cal|Full_Adder:fulladd1
+Calculator:cal|Full_Adder:fulladd2
 }
 # macro_sequence
 
