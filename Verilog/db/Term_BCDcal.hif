@@ -31,7 +31,7 @@ ON
 # case_sensitive
 # source_file
 term_bcdcal.v
-ddd77dd4f6258da3c14d7a2786d5517
+517f8fdd8fad4f6e53ecfaede0b31428
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -98,7 +98,7 @@ DEF
 
 # end
 # entity
-Convert
+Calculator
 # storage
 db|Term_BCDcal.(1).cnf
 db|Term_BCDcal.(1).cnf
@@ -109,7 +109,7 @@ ON
 # case_sensitive
 # source_file
 term_bcdcal.v
-ddd77dd4f6258da3c14d7a2786d5517
+517f8fdd8fad4f6e53ecfaede0b31428
 8
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -128,7 +128,43 @@ VERILOG_NON_CONSTANT_LOOP_LIMIT
 250
 }
 # hierarchies {
-Convert:conv
+Calculator:cal
+}
+# macro_sequence
+
+# end
+# entity
+Full_Adder
+# storage
+db|Term_BCDcal.(2).cnf
+db|Term_BCDcal.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+term_bcdcal.v
+517f8fdd8fad4f6e53ecfaede0b31428
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Calculator:cal|Full_Adder:fulladd
 }
 # macro_sequence
 

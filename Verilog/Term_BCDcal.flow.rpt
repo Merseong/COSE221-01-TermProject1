@@ -1,5 +1,5 @@
 Flow report for Term_BCDcal
-Sat Apr 06 09:48:38 2019
+Sat Apr 06 10:48:29 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Sat Apr 06 09:48:38 2019        ;
+; Flow Status                        ; Successful - Sat Apr 06 10:48:29 2019        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; Term_BCDcal                                  ;
 ; Top-level Entity Name              ; Term_BCDcal                                  ;
@@ -46,8 +46,8 @@ applicable agreement for further details.
 ; Device                             ; EP4CE115F29C7                                ;
 ; Timing Models                      ; Preliminary                                  ;
 ; Met timing requirements            ; N/A                                          ;
-; Total logic elements               ; 0 / 114,480 ( 0 % )                          ;
-;     Total combinational functions  ; 0 / 114,480 ( 0 % )                          ;
+; Total logic elements               ; 52 / 114,480 ( < 1 % )                       ;
+;     Total combinational functions  ; 52 / 114,480 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                          ;
 ; Total registers                    ; 0                                            ;
 ; Total pins                         ; 59 / 529 ( 11 % )                            ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/06/2019 09:48:13 ;
+; Start date & time ; 04/06/2019 10:48:05 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Term_BCDcal         ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                                                          ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 104170165042812.155451169307136                                                ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 104170165042812.155451528403576                                                ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                                                                             ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                                                                              ; --            ; --          ; --             ;
 ; MISC_FILE                          ; C:/Users/ESCi/Documents/Source/COSE221-01-TermProject1/Verilog/Term_BCDcal.dpf ; --            ; --          ; --             ;
@@ -91,8 +91,8 @@ applicable agreement for further details.
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 247 MB              ; 00:00:02                           ;
-; Fitter                    ; 00:00:15     ; 1.0                     ; 433 MB              ; 00:00:16                           ;
-; Assembler                 ; 00:00:07     ; 1.0                     ; 471 MB              ; 00:00:06                           ;
+; Fitter                    ; 00:00:16     ; 1.0                     ; 433 MB              ; 00:00:16                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 471 MB              ; 00:00:06                           ;
 ; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 336 MB              ; 00:00:03                           ;
 ; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:24                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
