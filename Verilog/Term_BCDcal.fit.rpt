@@ -1,5 +1,5 @@
 Fitter report for Term_BCDcal
-Sat Apr 06 19:01:29 2019
+Sun Apr 07 18:58:07 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -64,15 +64,15 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +------------------------------------+----------------------------------------------+
-; Fitter Status                      ; Successful - Sat Apr 06 19:01:29 2019        ;
+; Fitter Status                      ; Successful - Sun Apr 07 18:58:07 2019        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; Term_BCDcal                                  ;
 ; Top-level Entity Name              ; Term_BCDcal                                  ;
 ; Family                             ; Cyclone IV E                                 ;
 ; Device                             ; EP4CE115F29C7                                ;
 ; Timing Models                      ; Preliminary                                  ;
-; Total logic elements               ; 96 / 114,480 ( < 1 % )                       ;
-;     Total combinational functions  ; 96 / 114,480 ( < 1 % )                       ;
+; Total logic elements               ; 97 / 114,480 ( < 1 % )                       ;
+;     Total combinational functions  ; 97 / 114,480 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                          ;
 ; Total registers                    ; 0                                            ;
 ; Total pins                         ; 60 / 529 ( 11 % )                            ;
@@ -1153,8 +1153,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Achieved         ; 0 / 0 ( 0.00 % )   ;
 ;                         ;                    ;
 ; Placement               ;                    ;
-;     -- Requested        ; 0 / 227 ( 0.00 % ) ;
-;     -- Achieved         ; 0 / 227 ( 0.00 % ) ;
+;     -- Requested        ; 0 / 228 ( 0.00 % ) ;
+;     -- Achieved         ; 0 / 228 ( 0.00 % ) ;
 ;                         ;                    ;
 ; Routing (by Connection) ;                    ;
 ;     -- Requested        ; 0 / 0 ( 0.00 % )   ;
@@ -1176,7 +1176,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +----------------+---------+-------------------+-------------------------+-------------------+
-; Top            ; 227     ; 0                 ; N/A                     ; Source File       ;
+; Top            ; 228     ; 0                 ; N/A                     ; Source File       ;
 +----------------+---------+-------------------+-------------------------+-------------------+
 
 
@@ -1191,19 +1191,19 @@ The pin-out file can be found in C:/Users/ESCi/Documents/Source/COSE221-01-TermP
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 96 / 114,480 ( < 1 % ) ;
-;     -- Combinational with no register       ; 96                     ;
+; Total logic elements                        ; 97 / 114,480 ( < 1 % ) ;
+;     -- Combinational with no register       ; 97                     ;
 ;     -- Register only                        ; 0                      ;
 ;     -- Combinational with a register        ; 0                      ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 67                     ;
-;     -- 3 input functions                    ; 11                     ;
-;     -- <=2 input functions                  ; 18                     ;
+;     -- 4 input functions                    ; 64                     ;
+;     -- 3 input functions                    ; 28                     ;
+;     -- <=2 input functions                  ; 5                      ;
 ;     -- Register only                        ; 0                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 96                     ;
+;     -- normal mode                          ; 97                     ;
 ;     -- arithmetic mode                      ; 0                      ;
 ;                                             ;                        ;
 ; Total registers*                            ; 0 / 117,053 ( 0 % )    ;
@@ -1228,13 +1228,13 @@ The pin-out file can be found in C:/Users/ESCi/Documents/Source/COSE221-01-TermP
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%           ;
-; Peak interconnect usage (total/H/V)         ; 1% / 1% / 1%           ;
-; Maximum fan-out node                        ; Equal0~5               ;
+; Peak interconnect usage (total/H/V)         ; 1% / 1% / 2%           ;
+; Maximum fan-out node                        ; always2~0              ;
 ; Maximum fan-out                             ; 15                     ;
-; Highest non-global fan-out signal           ; Equal0~5               ;
+; Highest non-global fan-out signal           ; always2~0              ;
 ; Highest non-global fan-out                  ; 15                     ;
-; Total fan-out                               ; 445                    ;
-; Average fan-out                             ; 1.97                   ;
+; Total fan-out                               ; 458                    ;
+; Average fan-out                             ; 2.02                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -1246,10 +1246,10 @@ The pin-out file can be found in C:/Users/ESCi/Documents/Source/COSE221-01-TermP
 ; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 ; SW[0]  ; AB28  ; 5        ; 115          ; 17           ; 0            ; 13                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; SW[10] ; AC24  ; 5        ; 115          ; 4            ; 14           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; SW[11] ; AB24  ; 5        ; 115          ; 5            ; 14           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; SW[10] ; AC24  ; 5        ; 115          ; 4            ; 14           ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; SW[11] ; AB24  ; 5        ; 115          ; 5            ; 14           ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; SW[12] ; AB23  ; 5        ; 115          ; 7            ; 14           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; SW[13] ; AA24  ; 5        ; 115          ; 9            ; 21           ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; SW[13] ; AA24  ; 5        ; 115          ; 9            ; 21           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; SW[14] ; AA23  ; 5        ; 115          ; 10           ; 7            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; SW[15] ; AA22  ; 5        ; 115          ; 6            ; 14           ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; SW[16] ; Y24   ; 5        ; 115          ; 13           ; 0            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
@@ -1257,7 +1257,7 @@ The pin-out file can be found in C:/Users/ESCi/Documents/Source/COSE221-01-TermP
 ; SW[2]  ; AC27  ; 5        ; 115          ; 15           ; 7            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; SW[3]  ; AD27  ; 5        ; 115          ; 13           ; 7            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; SW[4]  ; AB27  ; 5        ; 115          ; 18           ; 7            ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; SW[5]  ; AC26  ; 5        ; 115          ; 11           ; 7            ; 13                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; SW[5]  ; AC26  ; 5        ; 115          ; 11           ; 7            ; 14                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; SW[6]  ; AD26  ; 5        ; 115          ; 10           ; 0            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; SW[7]  ; AB26  ; 5        ; 115          ; 15           ; 0            ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; SW[8]  ; AC25  ; 5        ; 115          ; 4            ; 21           ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
@@ -2197,10 +2197,10 @@ Note: User assignments will override these defaults. The user specified values a
 +-----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------+--------------+
 ; Compilation Hierarchy Node  ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                             ; Library Name ;
 +-----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------+--------------+
-; |Term_BCDcal                ; 96 (69)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 60   ; 0            ; 96 (69)      ; 0 (0)             ; 0 (0)            ; |Term_BCDcal                                    ; work         ;
+; |Term_BCDcal                ; 97 (70)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 60   ; 0            ; 97 (70)      ; 0 (0)             ; 0 (0)            ; |Term_BCDcal                                    ; work         ;
 ;    |Calculator:cal|         ; 27 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 27 (0)       ; 0 (0)             ; 0 (0)            ; |Term_BCDcal|Calculator:cal                     ;              ;
-;       |Full_Adder:fulladd1| ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1 ;              ;
-;       |Full_Adder:fulladd2| ; 13 (13)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 0 (0)            ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2 ;              ;
+;       |Full_Adder:fulladd1| ; 13 (13)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 0 (0)            ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1 ;              ;
+;       |Full_Adder:fulladd2| ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 0 (0)            ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2 ;              ;
 +-----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -2253,23 +2253,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HEX7[1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; HEX7[0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; LEDG[8] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; SW[5]   ; Input    ; --            ; (6) 2427 ps   ; --                    ; --  ; --   ;
 ; SW[0]   ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
-; SW[8]   ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
-; SW[1]   ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
-; SW[2]   ; Input    ; --            ; (6) 2427 ps   ; --                    ; --  ; --   ;
-; SW[3]   ; Input    ; --            ; (6) 2427 ps   ; --                    ; --  ; --   ;
-; SW[16]  ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
-; SW[11]  ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
+; SW[8]   ; Input    ; --            ; (6) 2427 ps   ; --                    ; --  ; --   ;
 ; SW[9]   ; Input    ; --            ; (6) 2427 ps   ; --                    ; --  ; --   ;
-; SW[10]  ; Input    ; --            ; (6) 2427 ps   ; --                    ; --  ; --   ;
-; SW[5]   ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
-; SW[6]   ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
-; SW[7]   ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
-; SW[13]  ; Input    ; --            ; (6) 2427 ps   ; --                    ; --  ; --   ;
-; SW[14]  ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
-; SW[15]  ; Input    ; --            ; (6) 2427 ps   ; --                    ; --  ; --   ;
+; SW[1]   ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
+; SW[16]  ; Input    ; --            ; (6) 2427 ps   ; --                    ; --  ; --   ;
+; SW[2]   ; Input    ; --            ; (6) 2427 ps   ; --                    ; --  ; --   ;
+; SW[10]  ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
+; SW[3]   ; Input    ; --            ; (6) 2427 ps   ; --                    ; --  ; --   ;
+; SW[11]  ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[4]   ; Input    ; --            ; (6) 2427 ps   ; --                    ; --  ; --   ;
 ; SW[12]  ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
+; SW[13]  ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
+; SW[6]   ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
+; SW[14]  ; Input    ; --            ; (6) 2427 ps   ; --                    ; --  ; --   ;
+; SW[15]  ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
+; SW[7]   ; Input    ; (6) 2427 ps   ; --            ; --                    ; --  ; --   ;
 +---------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -2278,13 +2278,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------+-------------------+---------+
 ; Source Pin / Fanout                                     ; Pad To Core Index ; Setting ;
 +---------------------------------------------------------+-------------------+---------+
+; SW[5]                                                   ;                   ;         ;
+;      - right[6]~5                                       ; 1                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd2|car[1]~1      ; 1                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd2|car[1]~2      ; 1                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd2|sumBCD[3]~0   ; 1                 ; 6       ;
+;      - right[7]~6                                       ; 1                 ; 6       ;
+;      - always1~2                                        ; 1                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd2|temp_out[1]~0 ; 1                 ; 6       ;
+;      - WideOr27~0                                       ; 1                 ; 6       ;
+;      - WideOr26~0                                       ; 1                 ; 6       ;
+;      - WideOr25~0                                       ; 1                 ; 6       ;
+;      - WideOr24~0                                       ; 1                 ; 6       ;
+;      - WideOr23~0                                       ; 1                 ; 6       ;
+;      - WideOr22~0                                       ; 1                 ; 6       ;
+;      - WideOr21~0                                       ; 1                 ; 6       ;
 ; SW[0]                                                   ;                   ;         ;
-;      - Calculator:cal|Full_Adder:fulladd1|car~0         ; 0                 ; 6       ;
-;      - right[3]~0                                       ; 0                 ; 6       ;
-;      - right[1]~2                                       ; 0                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd1|car[1]~1      ; 0                 ; 6       ;
-;      - right[2]~3                                       ; 0                 ; 6       ;
+;      - right[1]~0                                       ; 0                 ; 6       ;
 ;      - Calculator:cal|Full_Adder:fulladd1|temp_out[1]   ; 0                 ; 6       ;
+;      - right[2]~1                                       ; 0                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd1|car[1]~0      ; 0                 ; 6       ;
+;      - right[3]~2                                       ; 0                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd1|car~4         ; 0                 ; 6       ;
 ;      - WideOr20~0                                       ; 0                 ; 6       ;
 ;      - WideOr19~0                                       ; 0                 ; 6       ;
 ;      - WideOr18~0                                       ; 0                 ; 6       ;
@@ -2293,21 +2308,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - WideOr15~0                                       ; 0                 ; 6       ;
 ;      - WideOr14~0                                       ; 0                 ; 6       ;
 ; SW[8]                                                   ;                   ;         ;
-;      - Calculator:cal|Full_Adder:fulladd1|car~0         ; 0                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd1|car[1]~1      ; 0                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd1|temp_out[1]   ; 0                 ; 6       ;
-;      - WideOr34~0                                       ; 0                 ; 6       ;
-;      - WideOr33~0                                       ; 0                 ; 6       ;
-;      - WideOr32~0                                       ; 0                 ; 6       ;
-;      - WideOr31~0                                       ; 0                 ; 6       ;
-;      - WideOr30~0                                       ; 0                 ; 6       ;
-;      - WideOr29~0                                       ; 0                 ; 6       ;
-;      - WideOr28~0                                       ; 0                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd1|temp_out[1]   ; 1                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd1|car[1]~0      ; 1                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd1|car~4         ; 1                 ; 6       ;
+;      - WideOr34~0                                       ; 1                 ; 6       ;
+;      - WideOr33~0                                       ; 1                 ; 6       ;
+;      - WideOr32~0                                       ; 1                 ; 6       ;
+;      - WideOr31~0                                       ; 1                 ; 6       ;
+;      - WideOr30~0                                       ; 1                 ; 6       ;
+;      - WideOr29~0                                       ; 1                 ; 6       ;
+;      - WideOr28~0                                       ; 1                 ; 6       ;
+; SW[9]                                                   ;                   ;         ;
+;      - Calculator:cal|Full_Adder:fulladd1|temp_out[1]   ; 1                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd1|car[1]~0      ; 1                 ; 6       ;
+;      - always1~1                                        ; 1                 ; 6       ;
+;      - WideOr34~0                                       ; 1                 ; 6       ;
+;      - WideOr33~0                                       ; 1                 ; 6       ;
+;      - WideOr32~0                                       ; 1                 ; 6       ;
+;      - WideOr31~0                                       ; 1                 ; 6       ;
+;      - WideOr30~0                                       ; 1                 ; 6       ;
+;      - WideOr29~0                                       ; 1                 ; 6       ;
+;      - WideOr28~0                                       ; 1                 ; 6       ;
 ; SW[1]                                                   ;                   ;         ;
-;      - right[3]~0                                       ; 0                 ; 6       ;
-;      - right[1]~2                                       ; 0                 ; 6       ;
-;      - right[2]~3                                       ; 0                 ; 6       ;
-;      - Equal0~0                                         ; 0                 ; 6       ;
+;      - right[1]~0                                       ; 0                 ; 6       ;
+;      - right[2]~1                                       ; 0                 ; 6       ;
+;      - right[3]~2                                       ; 0                 ; 6       ;
+;      - always1~0                                        ; 0                 ; 6       ;
 ;      - WideOr20~0                                       ; 0                 ; 6       ;
 ;      - WideOr19~0                                       ; 0                 ; 6       ;
 ;      - WideOr18~0                                       ; 0                 ; 6       ;
@@ -2315,41 +2341,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - WideOr16~0                                       ; 0                 ; 6       ;
 ;      - WideOr15~0                                       ; 0                 ; 6       ;
 ;      - WideOr14~0                                       ; 0                 ; 6       ;
-; SW[2]                                                   ;                   ;         ;
-;      - right[3]~0                                       ; 1                 ; 6       ;
-;      - right[2]~3                                       ; 1                 ; 6       ;
-;      - Equal0~0                                         ; 1                 ; 6       ;
-;      - WideOr20~0                                       ; 1                 ; 6       ;
-;      - WideOr19~0                                       ; 1                 ; 6       ;
-;      - WideOr18~0                                       ; 1                 ; 6       ;
-;      - WideOr17~0                                       ; 1                 ; 6       ;
-;      - WideOr16~0                                       ; 1                 ; 6       ;
-;      - WideOr15~0                                       ; 1                 ; 6       ;
-;      - WideOr14~0                                       ; 1                 ; 6       ;
-; SW[3]                                                   ;                   ;         ;
-;      - right[3]~0                                       ; 1                 ; 6       ;
-;      - right[3]~1                                       ; 1                 ; 6       ;
-;      - Equal0~0                                         ; 1                 ; 6       ;
-;      - WideOr20~0                                       ; 1                 ; 6       ;
-;      - WideOr19~0                                       ; 1                 ; 6       ;
-;      - WideOr18~0                                       ; 1                 ; 6       ;
-;      - WideOr17~0                                       ; 1                 ; 6       ;
-;      - WideOr16~0                                       ; 1                 ; 6       ;
-;      - WideOr15~0                                       ; 1                 ; 6       ;
-;      - WideOr14~0                                       ; 1                 ; 6       ;
 ; SW[16]                                                  ;                   ;         ;
-;      - right[3]~1                                       ; 0                 ; 6       ;
-;      - right[1]~2                                       ; 0                 ; 6       ;
-;      - right[2]~3                                       ; 0                 ; 6       ;
-;      - right[7]~4                                       ; 0                 ; 6       ;
-;      - right[4]~5                                       ; 0                 ; 6       ;
-;      - right[6]~6                                       ; 0                 ; 6       ;
-;      - Equal0~5                                         ; 0                 ; 6       ;
-; SW[11]                                                  ;                   ;         ;
-;      - Calculator:cal|Full_Adder:fulladd1|temp_out[3]   ; 0                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd1|car[3]~4      ; 0                 ; 6       ;
-;      - Equal0~2                                         ; 0                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd1|temp_out[3]~0 ; 0                 ; 6       ;
+;      - right[1]~0                                       ; 1                 ; 6       ;
+;      - right[2]~1                                       ; 1                 ; 6       ;
+;      - right[3]~3                                       ; 1                 ; 6       ;
+;      - right[4]~4                                       ; 1                 ; 6       ;
+;      - right[6]~5                                       ; 1                 ; 6       ;
+;      - right[7]~6                                       ; 1                 ; 6       ;
+;      - always2~0                                        ; 1                 ; 6       ;
+; SW[2]                                                   ;                   ;         ;
+;      - right[2]~1                                       ; 1                 ; 6       ;
+;      - right[3]~2                                       ; 1                 ; 6       ;
+;      - always1~0                                        ; 1                 ; 6       ;
+;      - WideOr20~0                                       ; 1                 ; 6       ;
+;      - WideOr19~0                                       ; 1                 ; 6       ;
+;      - WideOr18~0                                       ; 1                 ; 6       ;
+;      - WideOr17~0                                       ; 1                 ; 6       ;
+;      - WideOr16~0                                       ; 1                 ; 6       ;
+;      - WideOr15~0                                       ; 1                 ; 6       ;
+;      - WideOr14~0                                       ; 1                 ; 6       ;
+; SW[10]                                                  ;                   ;         ;
+;      - Calculator:cal|Full_Adder:fulladd1|temp_out[2]   ; 0                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd1|car[2]~2      ; 0                 ; 6       ;
+;      - always1~1                                        ; 0                 ; 6       ;
 ;      - WideOr34~0                                       ; 0                 ; 6       ;
 ;      - WideOr33~0                                       ; 0                 ; 6       ;
 ;      - WideOr32~0                                       ; 0                 ; 6       ;
@@ -2357,99 +2371,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - WideOr30~0                                       ; 0                 ; 6       ;
 ;      - WideOr29~0                                       ; 0                 ; 6       ;
 ;      - WideOr28~0                                       ; 0                 ; 6       ;
-; SW[9]                                                   ;                   ;         ;
-;      - Calculator:cal|Full_Adder:fulladd1|car[1]~1      ; 1                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd1|temp_out[1]   ; 1                 ; 6       ;
-;      - Equal0~2                                         ; 1                 ; 6       ;
-;      - WideOr34~0                                       ; 1                 ; 6       ;
-;      - WideOr33~0                                       ; 1                 ; 6       ;
-;      - WideOr32~0                                       ; 1                 ; 6       ;
-;      - WideOr31~0                                       ; 1                 ; 6       ;
-;      - WideOr30~0                                       ; 1                 ; 6       ;
-;      - WideOr29~0                                       ; 1                 ; 6       ;
-;      - WideOr28~0                                       ; 1                 ; 6       ;
-; SW[10]                                                  ;                   ;         ;
-;      - Calculator:cal|Full_Adder:fulladd1|car[2]~3      ; 1                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd1|temp_out[2]   ; 1                 ; 6       ;
-;      - Equal0~2                                         ; 1                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd1|temp_out[3]~0 ; 1                 ; 6       ;
-;      - WideOr34~0                                       ; 1                 ; 6       ;
-;      - WideOr33~0                                       ; 1                 ; 6       ;
-;      - WideOr32~0                                       ; 1                 ; 6       ;
-;      - WideOr31~0                                       ; 1                 ; 6       ;
-;      - WideOr30~0                                       ; 1                 ; 6       ;
-;      - WideOr29~0                                       ; 1                 ; 6       ;
-;      - WideOr28~0                                       ; 1                 ; 6       ;
-; SW[5]                                                   ;                   ;         ;
-;      - Equal0~1                                         ; 0                 ; 6       ;
-;      - right[7]~4                                       ; 0                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd2|car[1]~1      ; 0                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd2|car[1]~2      ; 0                 ; 6       ;
-;      - right[6]~6                                       ; 0                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd2|temp_out[1]~0 ; 0                 ; 6       ;
-;      - WideOr27~0                                       ; 0                 ; 6       ;
-;      - WideOr26~0                                       ; 0                 ; 6       ;
-;      - WideOr25~0                                       ; 0                 ; 6       ;
-;      - WideOr24~0                                       ; 0                 ; 6       ;
-;      - WideOr23~0                                       ; 0                 ; 6       ;
-;      - WideOr22~0                                       ; 0                 ; 6       ;
-;      - WideOr21~0                                       ; 0                 ; 6       ;
-; SW[6]                                                   ;                   ;         ;
-;      - Equal0~1                                         ; 0                 ; 6       ;
-;      - right[7]~4                                       ; 0                 ; 6       ;
-;      - right[6]~6                                       ; 0                 ; 6       ;
-;      - WideOr27~0                                       ; 0                 ; 6       ;
-;      - WideOr26~0                                       ; 0                 ; 6       ;
-;      - WideOr25~0                                       ; 0                 ; 6       ;
-;      - WideOr24~0                                       ; 0                 ; 6       ;
-;      - WideOr23~0                                       ; 0                 ; 6       ;
-;      - WideOr22~0                                       ; 0                 ; 6       ;
-;      - WideOr21~0                                       ; 0                 ; 6       ;
-; SW[7]                                                   ;                   ;         ;
-;      - Equal0~1                                         ; 0                 ; 6       ;
-;      - right[7]~4                                       ; 0                 ; 6       ;
-;      - WideOr27~0                                       ; 0                 ; 6       ;
-;      - WideOr26~0                                       ; 0                 ; 6       ;
-;      - WideOr25~0                                       ; 0                 ; 6       ;
-;      - WideOr24~0                                       ; 0                 ; 6       ;
-;      - WideOr23~0                                       ; 0                 ; 6       ;
-;      - WideOr22~0                                       ; 0                 ; 6       ;
-;      - WideOr21~0                                       ; 0                 ; 6       ;
-; SW[13]                                                  ;                   ;         ;
-;      - Equal0~3                                         ; 1                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd2|car[1]~2      ; 1                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd2|temp_out[1]~0 ; 1                 ; 6       ;
-;      - WideOr41~0                                       ; 1                 ; 6       ;
-;      - WideOr40~0                                       ; 1                 ; 6       ;
-;      - WideOr39~0                                       ; 1                 ; 6       ;
-;      - WideOr38~0                                       ; 1                 ; 6       ;
-;      - WideOr37~0                                       ; 1                 ; 6       ;
-;      - WideOr36~0                                       ; 1                 ; 6       ;
-;      - WideOr35~0                                       ; 1                 ; 6       ;
-; SW[14]                                                  ;                   ;         ;
-;      - Equal0~3                                         ; 0                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd2|car[2]~3      ; 0                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd2|temp_out[2]   ; 0                 ; 6       ;
-;      - WideOr41~0                                       ; 0                 ; 6       ;
-;      - WideOr40~0                                       ; 0                 ; 6       ;
-;      - WideOr39~0                                       ; 0                 ; 6       ;
-;      - WideOr38~0                                       ; 0                 ; 6       ;
-;      - WideOr37~0                                       ; 0                 ; 6       ;
-;      - WideOr36~0                                       ; 0                 ; 6       ;
-;      - WideOr35~0                                       ; 0                 ; 6       ;
-; SW[15]                                                  ;                   ;         ;
-;      - Equal0~3                                         ; 1                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd2|car[3]~4      ; 1                 ; 6       ;
-;      - Calculator:cal|Full_Adder:fulladd2|temp_out[3]   ; 1                 ; 6       ;
-;      - WideOr41~0                                       ; 1                 ; 6       ;
-;      - WideOr40~0                                       ; 1                 ; 6       ;
-;      - WideOr39~0                                       ; 1                 ; 6       ;
-;      - WideOr38~0                                       ; 1                 ; 6       ;
-;      - WideOr37~0                                       ; 1                 ; 6       ;
-;      - WideOr36~0                                       ; 1                 ; 6       ;
-;      - WideOr35~0                                       ; 1                 ; 6       ;
+; SW[3]                                                   ;                   ;         ;
+;      - right[3]~2                                       ; 1                 ; 6       ;
+;      - right[3]~3                                       ; 1                 ; 6       ;
+;      - always1~0                                        ; 1                 ; 6       ;
+;      - WideOr20~0                                       ; 1                 ; 6       ;
+;      - WideOr19~0                                       ; 1                 ; 6       ;
+;      - WideOr18~0                                       ; 1                 ; 6       ;
+;      - WideOr17~0                                       ; 1                 ; 6       ;
+;      - WideOr16~0                                       ; 1                 ; 6       ;
+;      - WideOr15~0                                       ; 1                 ; 6       ;
+;      - WideOr14~0                                       ; 1                 ; 6       ;
+; SW[11]                                                  ;                   ;         ;
+;      - Calculator:cal|Full_Adder:fulladd1|temp_out[3]   ; 0                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd1|car[3]~3      ; 0                 ; 6       ;
+;      - always1~1                                        ; 0                 ; 6       ;
+;      - WideOr34~0                                       ; 0                 ; 6       ;
+;      - WideOr33~0                                       ; 0                 ; 6       ;
+;      - WideOr32~0                                       ; 0                 ; 6       ;
+;      - WideOr31~0                                       ; 0                 ; 6       ;
+;      - WideOr30~0                                       ; 0                 ; 6       ;
+;      - WideOr29~0                                       ; 0                 ; 6       ;
+;      - WideOr28~0                                       ; 0                 ; 6       ;
 ; SW[4]                                                   ;                   ;         ;
-;      - right[4]~5                                       ; 1                 ; 6       ;
+;      - right[4]~4                                       ; 1                 ; 6       ;
 ;      - WideOr27~0                                       ; 1                 ; 6       ;
 ;      - WideOr26~0                                       ; 1                 ; 6       ;
 ;      - WideOr25~0                                       ; 1                 ; 6       ;
@@ -2467,6 +2412,61 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - WideOr37~0                                       ; 0                 ; 6       ;
 ;      - WideOr36~0                                       ; 0                 ; 6       ;
 ;      - WideOr35~0                                       ; 0                 ; 6       ;
+; SW[13]                                                  ;                   ;         ;
+;      - Calculator:cal|Full_Adder:fulladd2|car[1]~2      ; 0                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd2|sumBCD[3]~0   ; 0                 ; 6       ;
+;      - always1~3                                        ; 0                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd2|temp_out[1]~0 ; 0                 ; 6       ;
+;      - WideOr41~0                                       ; 0                 ; 6       ;
+;      - WideOr40~0                                       ; 0                 ; 6       ;
+;      - WideOr39~0                                       ; 0                 ; 6       ;
+;      - WideOr38~0                                       ; 0                 ; 6       ;
+;      - WideOr37~0                                       ; 0                 ; 6       ;
+;      - WideOr36~0                                       ; 0                 ; 6       ;
+;      - WideOr35~0                                       ; 0                 ; 6       ;
+; SW[6]                                                   ;                   ;         ;
+;      - right[6]~5                                       ; 0                 ; 6       ;
+;      - right[7]~6                                       ; 0                 ; 6       ;
+;      - always1~2                                        ; 0                 ; 6       ;
+;      - WideOr27~0                                       ; 0                 ; 6       ;
+;      - WideOr26~0                                       ; 0                 ; 6       ;
+;      - WideOr25~0                                       ; 0                 ; 6       ;
+;      - WideOr24~0                                       ; 0                 ; 6       ;
+;      - WideOr23~0                                       ; 0                 ; 6       ;
+;      - WideOr22~0                                       ; 0                 ; 6       ;
+;      - WideOr21~0                                       ; 0                 ; 6       ;
+; SW[14]                                                  ;                   ;         ;
+;      - Calculator:cal|Full_Adder:fulladd2|temp_out[2]   ; 1                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd2|car[2]~3      ; 1                 ; 6       ;
+;      - always1~3                                        ; 1                 ; 6       ;
+;      - WideOr41~0                                       ; 1                 ; 6       ;
+;      - WideOr40~0                                       ; 1                 ; 6       ;
+;      - WideOr39~0                                       ; 1                 ; 6       ;
+;      - WideOr38~0                                       ; 1                 ; 6       ;
+;      - WideOr37~0                                       ; 1                 ; 6       ;
+;      - WideOr36~0                                       ; 1                 ; 6       ;
+;      - WideOr35~0                                       ; 1                 ; 6       ;
+; SW[15]                                                  ;                   ;         ;
+;      - Calculator:cal|Full_Adder:fulladd2|temp_out[3]   ; 0                 ; 6       ;
+;      - Calculator:cal|Full_Adder:fulladd2|c_out~0       ; 0                 ; 6       ;
+;      - always1~3                                        ; 0                 ; 6       ;
+;      - WideOr41~0                                       ; 0                 ; 6       ;
+;      - WideOr40~0                                       ; 0                 ; 6       ;
+;      - WideOr39~0                                       ; 0                 ; 6       ;
+;      - WideOr38~0                                       ; 0                 ; 6       ;
+;      - WideOr37~0                                       ; 0                 ; 6       ;
+;      - WideOr36~0                                       ; 0                 ; 6       ;
+;      - WideOr35~0                                       ; 0                 ; 6       ;
+; SW[7]                                                   ;                   ;         ;
+;      - right[7]~6                                       ; 0                 ; 6       ;
+;      - always1~2                                        ; 0                 ; 6       ;
+;      - WideOr27~0                                       ; 0                 ; 6       ;
+;      - WideOr26~0                                       ; 0                 ; 6       ;
+;      - WideOr25~0                                       ; 0                 ; 6       ;
+;      - WideOr24~0                                       ; 0                 ; 6       ;
+;      - WideOr23~0                                       ; 0                 ; 6       ;
+;      - WideOr22~0                                       ; 0                 ; 6       ;
+;      - WideOr21~0                                       ; 0                 ; 6       ;
 +---------------------------------------------------------+-------------------+---------+
 
 
@@ -2475,56 +2475,56 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------+---------+
 ; Name                                             ; Fan-Out ;
 +--------------------------------------------------+---------+
-; Equal0~5                                         ; 15      ;
-; SW[5]~input                                      ; 13      ;
+; always1~4                                        ; 15      ;
+; always2~0                                        ; 15      ;
+; SW[5]~input                                      ; 14      ;
 ; SW[0]~input                                      ; 13      ;
-; SW[10]~input                                     ; 11      ;
-; SW[11]~input                                     ; 11      ;
+; SW[13]~input                                     ; 11      ;
 ; SW[1]~input                                      ; 11      ;
 ; SW[15]~input                                     ; 10      ;
 ; SW[14]~input                                     ; 10      ;
-; SW[13]~input                                     ; 10      ;
 ; SW[6]~input                                      ; 10      ;
-; SW[9]~input                                      ; 10      ;
+; SW[11]~input                                     ; 10      ;
 ; SW[3]~input                                      ; 10      ;
+; SW[10]~input                                     ; 10      ;
 ; SW[2]~input                                      ; 10      ;
+; SW[9]~input                                      ; 10      ;
 ; SW[8]~input                                      ; 10      ;
-; SW[12]~input                                     ; 9       ;
 ; SW[7]~input                                      ; 9       ;
+; SW[12]~input                                     ; 9       ;
 ; SW[4]~input                                      ; 8       ;
 ; SW[16]~input                                     ; 7       ;
-; Calculator:cal|Full_Adder:fulladd2|sumBCD[3]~3   ; 7       ;
-; Calculator:cal|Full_Adder:fulladd2|sumBCD[2]~2   ; 7       ;
-; Calculator:cal|Full_Adder:fulladd2|sumBCD[1]~1   ; 7       ;
-; Calculator:cal|Full_Adder:fulladd2|sumBCD[0]~0   ; 7       ;
+; Calculator:cal|Full_Adder:fulladd2|sumBCD[3]~4   ; 7       ;
+; Calculator:cal|Full_Adder:fulladd2|sumBCD[2]~3   ; 7       ;
+; Calculator:cal|Full_Adder:fulladd2|sumBCD[1]~2   ; 7       ;
+; Calculator:cal|Full_Adder:fulladd2|sumBCD[0]~1   ; 7       ;
 ; Calculator:cal|Full_Adder:fulladd1|sumBCD[3]~3   ; 7       ;
 ; Calculator:cal|Full_Adder:fulladd1|sumBCD[2]~2   ; 7       ;
 ; Calculator:cal|Full_Adder:fulladd1|sumBCD[1]~1   ; 7       ;
 ; Calculator:cal|Full_Adder:fulladd1|sumBCD[0]~0   ; 7       ;
-; Calculator:cal|Full_Adder:fulladd1|car[3]~4      ; 6       ;
-; Calculator:cal|Full_Adder:fulladd2|temp_out[2]   ; 5       ;
+; Calculator:cal|Full_Adder:fulladd1|car[3]~3      ; 6       ;
+; Calculator:cal|Full_Adder:fulladd2|c_out~0       ; 5       ;
 ; Calculator:cal|Full_Adder:fulladd2|temp_out[3]   ; 5       ;
-; Calculator:cal|Full_Adder:fulladd2|car[3]~4      ; 5       ;
+; Calculator:cal|Full_Adder:fulladd2|temp_out[2]   ; 5       ;
+; Calculator:cal|Full_Adder:fulladd1|temp_out[3]   ; 5       ;
 ; Calculator:cal|Full_Adder:fulladd1|temp_out[2]   ; 5       ;
-; Calculator:cal|Full_Adder:fulladd2|temp_out[1]~0 ; 4       ;
+; Calculator:cal|Full_Adder:fulladd2|car[0]~0      ; 4       ;
 ; Calculator:cal|Full_Adder:fulladd1|temp_out[1]   ; 4       ;
-; Calculator:cal|Full_Adder:fulladd1|temp_out[3]   ; 4       ;
-; right[2]~3                                       ; 4       ;
-; Calculator:cal|Full_Adder:fulladd1|car[1]~1      ; 4       ;
-; Calculator:cal|Full_Adder:fulladd2|car[0]~0      ; 3       ;
-; right[3]~1                                       ; 3       ;
+; Calculator:cal|Full_Adder:fulladd2|temp_out[1]~0 ; 3       ;
+; Calculator:cal|Full_Adder:fulladd1|car[1]~0      ; 3       ;
+; right[2]~1                                       ; 3       ;
 ; Calculator:cal|Full_Adder:fulladd2|car[2]~3      ; 2       ;
-; right[6]~6                                       ; 2       ;
+; right[7]~6                                       ; 2       ;
 ; Calculator:cal|Full_Adder:fulladd2|car[1]~2      ; 2       ;
 ; Calculator:cal|Full_Adder:fulladd2|car[1]~1      ; 2       ;
-; right[4]~5                                       ; 2       ;
+; right[6]~5                                       ; 2       ;
+; right[4]~4                                       ; 2       ;
 ; Calculator:cal|Full_Adder:fulladd1|WideOr0~0     ; 2       ;
-; right[7]~4                                       ; 2       ;
-; Calculator:cal|Full_Adder:fulladd1|car[2]~3      ; 2       ;
 ; Calculator:cal|Full_Adder:fulladd1|car[2]~2      ; 2       ;
-; right[1]~2                                       ; 2       ;
+; Calculator:cal|Full_Adder:fulladd1|car[2]~1      ; 2       ;
+; right[3]~3                                       ; 2       ;
+; right[1]~0                                       ; 2       ;
 ; ~ALTERA_nCEO~~obuf                               ; 1       ;
-; ~ALTERA_DATA0~                                   ; 1       ;
 +--------------------------------------------------+---------+
 
 
@@ -2533,30 +2533,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------+-------------------------+
 ; Interconnect Resource Type ; Usage                   ;
 +----------------------------+-------------------------+
-; Block interconnects        ; 104 / 342,891 ( < 1 % ) ;
-; C16 interconnects          ; 17 / 10,120 ( < 1 % )   ;
-; C4 interconnects           ; 199 / 209,544 ( < 1 % ) ;
-; Direct links               ; 7 / 342,891 ( < 1 % )   ;
+; Block interconnects        ; 113 / 342,891 ( < 1 % ) ;
+; C16 interconnects          ; 36 / 10,120 ( < 1 % )   ;
+; C4 interconnects           ; 189 / 209,544 ( < 1 % ) ;
+; Direct links               ; 12 / 342,891 ( < 1 % )  ;
 ; Global clocks              ; 0 / 20 ( 0 % )          ;
-; Local interconnects        ; 33 / 119,088 ( < 1 % )  ;
-; R24 interconnects          ; 43 / 9,963 ( < 1 % )    ;
-; R4 interconnects           ; 96 / 289,782 ( < 1 % )  ;
+; Local interconnects        ; 23 / 119,088 ( < 1 % )  ;
+; R24 interconnects          ; 52 / 9,963 ( < 1 % )    ;
+; R4 interconnects           ; 128 / 289,782 ( < 1 % ) ;
 +----------------------------+-------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 10.67) ; Number of LABs  (Total = 9) ;
+; Number of Logic Elements  (Average = 10.78) ; Number of LABs  (Total = 9) ;
 +---------------------------------------------+-----------------------------+
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
-; 3                                           ; 0                           ;
-; 4                                           ; 1                           ;
+; 3                                           ; 1                           ;
+; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
-; 6                                           ; 1                           ;
+; 6                                           ; 0                           ;
 ; 7                                           ; 2                           ;
-; 8                                           ; 1                           ;
+; 8                                           ; 2                           ;
 ; 9                                           ; 0                           ;
 ; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
@@ -2571,17 +2571,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 10.67) ; Number of LABs  (Total = 9) ;
+; Number of Signals Sourced  (Average = 10.78) ; Number of LABs  (Total = 9) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
 ; 2                                            ; 0                           ;
-; 3                                            ; 0                           ;
-; 4                                            ; 1                           ;
+; 3                                            ; 1                           ;
+; 4                                            ; 0                           ;
 ; 5                                            ; 0                           ;
-; 6                                            ; 1                           ;
+; 6                                            ; 0                           ;
 ; 7                                            ; 2                           ;
-; 8                                            ; 1                           ;
+; 8                                            ; 2                           ;
 ; 9                                            ; 0                           ;
 ; 10                                           ; 0                           ;
 ; 11                                           ; 0                           ;
@@ -2596,38 +2596,52 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 7.22) ; Number of LABs  (Total = 9) ;
+; Number of Signals Sourced Out  (Average = 8.67) ; Number of LABs  (Total = 9) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 0                           ;
 ; 2                                               ; 0                           ;
-; 3                                               ; 0                           ;
-; 4                                               ; 1                           ;
+; 3                                               ; 1                           ;
+; 4                                               ; 0                           ;
 ; 5                                               ; 0                           ;
 ; 6                                               ; 1                           ;
-; 7                                               ; 3                           ;
+; 7                                               ; 2                           ;
 ; 8                                               ; 2                           ;
-; 9                                               ; 2                           ;
+; 9                                               ; 0                           ;
+; 10                                              ; 1                           ;
+; 11                                              ; 0                           ;
+; 12                                              ; 0                           ;
+; 13                                              ; 0                           ;
+; 14                                              ; 1                           ;
+; 15                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 6.67) ; Number of LABs  (Total = 9) ;
+; Number of Distinct Inputs  (Average = 7.44) ; Number of LABs  (Total = 9) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
-; 4                                           ; 4                           ;
-; 5                                           ; 1                           ;
+; 4                                           ; 5                           ;
+; 5                                           ; 0                           ;
 ; 6                                           ; 0                           ;
 ; 7                                           ; 0                           ;
-; 8                                           ; 0                           ;
-; 9                                           ; 2                           ;
-; 10                                          ; 1                           ;
+; 8                                           ; 1                           ;
+; 9                                           ; 1                           ;
+; 10                                          ; 0                           ;
 ; 11                                          ; 1                           ;
+; 12                                          ; 0                           ;
+; 13                                          ; 0                           ;
+; 14                                          ; 0                           ;
+; 15                                          ; 0                           ;
+; 16                                          ; 0                           ;
+; 17                                          ; 0                           ;
+; 18                                          ; 0                           ;
+; 19                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -2735,23 +2749,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HEX7[1]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; HEX7[0]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDG[8]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[5]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[0]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[8]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[1]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[2]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[3]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[16]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[11]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[9]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[1]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[16]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[2]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[10]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[5]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[6]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[7]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[13]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[14]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[15]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[3]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[11]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[4]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[12]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[13]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[6]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[14]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[15]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[7]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -2804,7 +2818,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Apr 06 19:00:55 2019
+    Info: Processing started: Sun Apr 07 18:57:41 2019
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off Term_BCDcal -c Term_BCDcal
 Info: Selected device EP4CE115F29C7 for design "Term_BCDcal"
 Info: Core supply voltage is 1.2V
@@ -3783,10 +3797,10 @@ Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
 Info: Fitter placement was successful
-Info: Fitter placement operations ending: elapsed time is 00:00:04
+Info: Fitter placement operations ending: elapsed time is 00:00:02
 Info: Fitter routing operations beginning
 Info: Average interconnect usage is 0% of the available device resources
-    Info: Peak interconnect usage is 1% of the available device resources in the region that extends from location X104_Y0 to location X115_Y11
+    Info: Peak interconnect usage is 1% of the available device resources in the region that extends from location X104_Y12 to location X115_Y23
 Info: Fitter routing operations ending: elapsed time is 00:00:01
 Info: The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info: Optimizations that may affect the design's routability were skipped
@@ -3797,8 +3811,8 @@ Info: Delay annotation completed successfully
 Warning: Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info: Quartus II Fitter was successful. 0 errors, 938 warnings
     Info: Peak virtual memory: 434 megabytes
-    Info: Processing ended: Sat Apr 06 19:01:30 2019
-    Info: Elapsed time: 00:00:35
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Processing ended: Sun Apr 07 18:58:08 2019
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:28
 
 

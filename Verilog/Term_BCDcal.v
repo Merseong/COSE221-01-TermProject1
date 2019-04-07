@@ -39,7 +39,7 @@ module Term_BCDcal(SW, HEX0, HEX1, HEX4, HEX5, HEX6, HEX7, LEDG);
 	// show variables to segment
 	always@(*)
 	begin
-		case({num_err, cal_err ^ SW[16]}) // invalid BCD/overflow/underflow detection
+		case({cal_err ^ SW[16], num_err}) // invalid BCD, overflow/underflow detection
 			2'b00: begin
 				case(out[3:0]) // out segment
 					9:HEX0=Seg9;	8:HEX0=Seg8;	7:HEX0=Seg7;	6:HEX0=Seg6;
@@ -53,10 +53,15 @@ module Term_BCDcal(SW, HEX0, HEX1, HEX4, HEX5, HEX6, HEX7, LEDG);
 				endcase
 				LEDG[8] = 1'b0;
 			end
-			default: begin
+			2'b10: begin
 				HEX0 = SegErr;
 				HEX1 = SegErr;
 				LEDG[8] = 1'b1;
+			end
+			default: begin
+				HEX0 = SegErr;
+				HEX1 = SegErr;
+				LEDG[8] = 1'b0;
 			end
 		endcase
 		case(SW[3:0]) // right segment
