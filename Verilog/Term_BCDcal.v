@@ -4,12 +4,14 @@ module Term_BCDcal(SW, HEX0, HEX1, HEX4, HEX5, HEX6, HEX7, LEDG);
 	output reg [0:6] HEX0, HEX1; // output segment
 	output reg [0:6] HEX4, HEX5; // right segment
 	output reg [0:6] HEX6, HEX7; // left segment
-	output reg [8:8] LEDG;
+	output reg [8:8] LEDG; // error
+	
+	// constant values
 	parameter Seg9 = 7'b000_1100; parameter Seg8 = 7'b000_0000; parameter Seg7 = 7'b000_1111; parameter Seg6 = 7'b010_0000; parameter Seg5 = 7'b010_0100;
 	parameter Seg4 = 7'b100_1100; parameter Seg3 = 7'b000_0110; parameter Seg2 = 7'b001_0010; parameter Seg1 = 7'b100_1111; parameter Seg0 = 7'b000_0001;
 	parameter SegErr = 7'b111_1111;
 	
-	reg [7:0] left, right;
+	reg [7:0] left, right; // numbers to calculate
 	wire [7:0] out;
 	wire [7:0] conv_right;
 	wire cal_err; // carry when calculating
@@ -23,7 +25,7 @@ module Term_BCDcal(SW, HEX0, HEX1, HEX4, HEX5, HEX6, HEX7, LEDG);
 	begin
 		left = SW[15:8];
 		case(SW[16])
-			1'b1: right = conv_right;
+			1'b1: right = conv_right; // if operator is minus, make right number converted
 			default: right = SW[7:0];
 		endcase
 	end
@@ -53,12 +55,12 @@ module Term_BCDcal(SW, HEX0, HEX1, HEX4, HEX5, HEX6, HEX7, LEDG);
 				endcase
 				LEDG[8] = 1'b0;
 			end
-			2'b10: begin
+			2'b10: begin // overflow/underflow error
 				HEX0 = SegErr;
 				HEX1 = SegErr;
 				LEDG[8] = 1'b1;
 			end
-			default: begin
+			default: begin // invalid BCD error
 				HEX0 = SegErr;
 				HEX1 = SegErr;
 				LEDG[8] = 1'b0;
@@ -151,7 +153,7 @@ module Full_Adder(sumBCD, c_out, leftBCD, rightBCD, c_in);
 					sumBCD = 4'b0101;
 					c_out = 1'b1;
 					end
-				default: begin // 1~9
+				default: begin // 0~9
 					sumBCD = temp_out;
 					c_out = car[3];
 					end

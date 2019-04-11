@@ -1,5 +1,5 @@
 Simulator report for Term_BCDcal
-Sat Apr 06 11:04:41 2019
+Thu Apr 11 15:59:17 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -45,7 +45,7 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 139 nodes    ;
+; Simulation Netlist Size     ; 158 nodes    ;
 ; Simulation Coverage         ;       0.00 % ;
 ; Total Number of Transitions ; 0            ;
 ; Simulation Breakpoints      ; 0            ;
@@ -54,33 +54,33 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                       ;
-+--------------------------------------------------------------------------------------------+-------------+---------------+
-; Option                                                                                     ; Setting     ; Default Value ;
-+--------------------------------------------------------------------------------------------+-------------+---------------+
-; Simulation mode                                                                            ; Timing      ; Timing        ;
-; Start time                                                                                 ; 0 ns        ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF        ;               ;
-; Vector input source                                                                        ; 28+7=35.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On          ; On            ;
-; Check outputs                                                                              ; Off         ; Off           ;
-; Report simulation coverage                                                                 ; On          ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On          ; On            ;
-; Display missing 1-value coverage report                                                    ; On          ; On            ;
-; Display missing 0-value coverage report                                                    ; On          ; On            ;
-; Detect setup and hold time violations                                                      ; Off         ; Off           ;
-; Detect glitches                                                                            ; Off         ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off         ; Off           ;
-; Generate Signal Activity File                                                              ; Off         ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off         ; Off           ;
-; Group bus channels in simulation results                                                   ; Off         ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On          ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE  ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off         ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off         ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto        ; Auto          ;
-+--------------------------------------------------------------------------------------------+-------------+---------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Option                                                                                     ; Setting        ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Simulation mode                                                                            ; Timing         ; Timing        ;
+; Start time                                                                                 ; 0 ns           ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF           ;               ;
+; Vector input source                                                                        ; 64+71=over.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On             ; On            ;
+; Check outputs                                                                              ; Off            ; Off           ;
+; Report simulation coverage                                                                 ; On             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On             ; On            ;
+; Display missing 1-value coverage report                                                    ; On             ; On            ;
+; Display missing 0-value coverage report                                                    ; On             ; On            ;
+; Detect setup and hold time violations                                                      ; Off            ; Off           ;
+; Detect glitches                                                                            ; Off            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off            ; Off           ;
+; Generate Signal Activity File                                                              ; Off            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto           ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
 
 
 +----------------------+
@@ -96,12 +96,12 @@ Please use Quartus II to view the waveform report data.
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
 ; Total coverage as a percentage                      ;       0.00 % ;
-; Total nodes checked                                 ; 139          ;
-; Total output ports checked                          ; 139          ;
+; Total nodes checked                                 ; 158          ;
+; Total output ports checked                          ; 158          ;
 ; Total output ports with complete 1/0-value coverage ; 0            ;
-; Total output ports with no 1/0-value coverage       ; 139          ;
-; Total output ports with no 1-value coverage         ; 139          ;
-; Total output ports with no 0-value coverage         ; 139          ;
+; Total output ports with no 1/0-value coverage       ; 158          ;
+; Total output ports with no 1-value coverage         ; 158          ;
+; Total output ports with no 0-value coverage         ; 158          ;
 +-----------------------------------------------------+--------------+
 
 
@@ -119,58 +119,66 @@ The following table displays output ports that do not toggle to 1 during simulat
 +---------------------------------------------------------------+---------------------------------------------------------------+------------------+
 ; Node Name                                                     ; Output Port Name                                              ; Output Port Type ;
 +---------------------------------------------------------------+---------------------------------------------------------------+------------------+
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car~0         ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car~0         ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[1]~1      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[1]~1      ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[2]~2      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[2]~2      ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[3]~0 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[3]~0 ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[2]~1 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[2]~1 ; combout          ;
+; |Term_BCDcal|right[6]~0                                       ; |Term_BCDcal|right[6]~0                                       ; combout          ;
+; |Term_BCDcal|right[3]~1                                       ; |Term_BCDcal|right[3]~1                                       ; combout          ;
+; |Term_BCDcal|right[3]~2                                       ; |Term_BCDcal|right[3]~2                                       ; combout          ;
+; |Term_BCDcal|right[2]~3                                       ; |Term_BCDcal|right[2]~3                                       ; combout          ;
+; |Term_BCDcal|right[1]~4                                       ; |Term_BCDcal|right[1]~4                                       ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[1]~0      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[1]~0      ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[3]~2 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[3]~2 ; combout          ;
 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[1]   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[1]   ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car~3         ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car~3         ; combout          ;
-; |Term_BCDcal|Decoder1~0                                       ; |Term_BCDcal|Decoder1~0                                       ; combout          ;
-; |Term_BCDcal|Decoder1~1                                       ; |Term_BCDcal|Decoder1~1                                       ; combout          ;
-; |Term_BCDcal|Decoder1~2                                       ; |Term_BCDcal|Decoder1~2                                       ; combout          ;
-; |Term_BCDcal|Decoder1~3                                       ; |Term_BCDcal|Decoder1~3                                       ; combout          ;
-; |Term_BCDcal|WideOr1~0                                        ; |Term_BCDcal|WideOr1~0                                        ; combout          ;
-; |Term_BCDcal|Decoder1~4                                       ; |Term_BCDcal|Decoder1~4                                       ; combout          ;
-; |Term_BCDcal|Decoder1~5                                       ; |Term_BCDcal|Decoder1~5                                       ; combout          ;
-; |Term_BCDcal|Decoder1~6                                       ; |Term_BCDcal|Decoder1~6                                       ; combout          ;
-; |Term_BCDcal|WideOr3~0                                        ; |Term_BCDcal|WideOr3~0                                        ; combout          ;
-; |Term_BCDcal|WideOr6                                          ; |Term_BCDcal|WideOr6                                          ; combout          ;
-; |Term_BCDcal|Decoder1~7                                       ; |Term_BCDcal|Decoder1~7                                       ; combout          ;
-; |Term_BCDcal|WideOr4~0                                        ; |Term_BCDcal|WideOr4~0                                        ; combout          ;
-; |Term_BCDcal|WideOr5                                          ; |Term_BCDcal|WideOr5                                          ; combout          ;
-; |Term_BCDcal|WideOr4                                          ; |Term_BCDcal|WideOr4                                          ; combout          ;
-; |Term_BCDcal|WideOr3                                          ; |Term_BCDcal|WideOr3                                          ; combout          ;
-; |Term_BCDcal|Decoder1~8                                       ; |Term_BCDcal|Decoder1~8                                       ; combout          ;
-; |Term_BCDcal|WideOr0                                          ; |Term_BCDcal|WideOr0                                          ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|c_out~0       ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|c_out~0       ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[0]~0 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[0]~0 ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[2]   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[2]   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|WideOr0~0     ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|WideOr0~0     ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[3]~1      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[3]~1      ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[3]~2      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[3]~2      ; combout          ;
+; |Term_BCDcal|right[4]~5                                       ; |Term_BCDcal|right[4]~5                                       ; combout          ;
 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[0]~0      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[0]~0      ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[1]~1      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[1]~1      ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[2]~1 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[2]~1 ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[1]~2 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[1]~2 ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[2]~2 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[2]~2 ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[1]~3 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[1]~3 ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[3]~0   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[3]~0   ; combout          ;
+; |Term_BCDcal|right[7]~6                                       ; |Term_BCDcal|right[7]~6                                       ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[2]~1      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[2]~1      ; combout          ;
 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[2]~2      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[2]~2      ; combout          ;
-; |Term_BCDcal|Decoder2~0                                       ; |Term_BCDcal|Decoder2~0                                       ; combout          ;
-; |Term_BCDcal|Decoder2~1                                       ; |Term_BCDcal|Decoder2~1                                       ; combout          ;
-; |Term_BCDcal|Decoder2~2                                       ; |Term_BCDcal|Decoder2~2                                       ; combout          ;
-; |Term_BCDcal|Decoder2~3                                       ; |Term_BCDcal|Decoder2~3                                       ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[2]~3      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[2]~3      ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[3]   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[3]   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|c_out~0       ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|c_out~0       ; combout          ;
+; |Term_BCDcal|always2~0                                        ; |Term_BCDcal|always2~0                                        ; combout          ;
+; |Term_BCDcal|always1~0                                        ; |Term_BCDcal|always1~0                                        ; combout          ;
+; |Term_BCDcal|always1~1                                        ; |Term_BCDcal|always1~1                                        ; combout          ;
+; |Term_BCDcal|always1~2                                        ; |Term_BCDcal|always1~2                                        ; combout          ;
+; |Term_BCDcal|always1~3                                        ; |Term_BCDcal|always1~3                                        ; combout          ;
+; |Term_BCDcal|always1~4                                        ; |Term_BCDcal|always1~4                                        ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car~3         ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car~3         ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[0]~0   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[0]~0   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[1]~1   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[1]~1   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[2]~2   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[2]~2   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[3]~3   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[3]~3   ; combout          ;
+; |Term_BCDcal|WideOr6~0                                        ; |Term_BCDcal|WideOr6~0                                        ; combout          ;
+; |Term_BCDcal|HEX0~0                                           ; |Term_BCDcal|HEX0~0                                           ; combout          ;
+; |Term_BCDcal|WideOr5~0                                        ; |Term_BCDcal|WideOr5~0                                        ; combout          ;
+; |Term_BCDcal|HEX0~1                                           ; |Term_BCDcal|HEX0~1                                           ; combout          ;
+; |Term_BCDcal|WideOr4~0                                        ; |Term_BCDcal|WideOr4~0                                        ; combout          ;
+; |Term_BCDcal|HEX0~2                                           ; |Term_BCDcal|HEX0~2                                           ; combout          ;
+; |Term_BCDcal|WideOr3~0                                        ; |Term_BCDcal|WideOr3~0                                        ; combout          ;
+; |Term_BCDcal|HEX0~3                                           ; |Term_BCDcal|HEX0~3                                           ; combout          ;
+; |Term_BCDcal|WideOr2~0                                        ; |Term_BCDcal|WideOr2~0                                        ; combout          ;
+; |Term_BCDcal|HEX0~4                                           ; |Term_BCDcal|HEX0~4                                           ; combout          ;
+; |Term_BCDcal|WideOr1~0                                        ; |Term_BCDcal|WideOr1~0                                        ; combout          ;
+; |Term_BCDcal|HEX0~5                                           ; |Term_BCDcal|HEX0~5                                           ; combout          ;
+; |Term_BCDcal|WideOr0~0                                        ; |Term_BCDcal|WideOr0~0                                        ; combout          ;
+; |Term_BCDcal|HEX0~6                                           ; |Term_BCDcal|HEX0~6                                           ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[0]   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[0]   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[0]~1   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[0]~1   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[1]~2   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[1]~2   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[2]~3   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[2]~3   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[3]~4   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[3]~4   ; combout          ;
+; |Term_BCDcal|WideOr13~0                                       ; |Term_BCDcal|WideOr13~0                                       ; combout          ;
 ; |Term_BCDcal|WideOr12~0                                       ; |Term_BCDcal|WideOr12~0                                       ; combout          ;
-; |Term_BCDcal|Decoder2~4                                       ; |Term_BCDcal|Decoder2~4                                       ; combout          ;
-; |Term_BCDcal|WideOr8~0                                        ; |Term_BCDcal|WideOr8~0                                        ; combout          ;
-; |Term_BCDcal|WideOr8~1                                        ; |Term_BCDcal|WideOr8~1                                        ; combout          ;
-; |Term_BCDcal|WideOr8~2                                        ; |Term_BCDcal|WideOr8~2                                        ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[3]~3 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[3]~3 ; combout          ;
-; |Term_BCDcal|Decoder2~5                                       ; |Term_BCDcal|Decoder2~5                                       ; combout          ;
-; |Term_BCDcal|Decoder2~6                                       ; |Term_BCDcal|Decoder2~6                                       ; combout          ;
-; |Term_BCDcal|WideOr10~0                                       ; |Term_BCDcal|WideOr10~0                                       ; combout          ;
-; |Term_BCDcal|WideOr13                                         ; |Term_BCDcal|WideOr13                                         ; combout          ;
-; |Term_BCDcal|Decoder2~7                                       ; |Term_BCDcal|Decoder2~7                                       ; combout          ;
 ; |Term_BCDcal|WideOr11~0                                       ; |Term_BCDcal|WideOr11~0                                       ; combout          ;
-; |Term_BCDcal|WideOr12                                         ; |Term_BCDcal|WideOr12                                         ; combout          ;
-; |Term_BCDcal|WideOr11                                         ; |Term_BCDcal|WideOr11                                         ; combout          ;
-; |Term_BCDcal|WideOr10                                         ; |Term_BCDcal|WideOr10                                         ; combout          ;
-; |Term_BCDcal|Decoder2~8                                       ; |Term_BCDcal|Decoder2~8                                       ; combout          ;
-; |Term_BCDcal|WideOr7                                          ; |Term_BCDcal|WideOr7                                          ; combout          ;
+; |Term_BCDcal|WideOr10~0                                       ; |Term_BCDcal|WideOr10~0                                       ; combout          ;
+; |Term_BCDcal|WideOr9~0                                        ; |Term_BCDcal|WideOr9~0                                        ; combout          ;
+; |Term_BCDcal|WideOr8~0                                        ; |Term_BCDcal|WideOr8~0                                        ; combout          ;
+; |Term_BCDcal|WideOr7~0                                        ; |Term_BCDcal|WideOr7~0                                        ; combout          ;
 ; |Term_BCDcal|WideOr20~0                                       ; |Term_BCDcal|WideOr20~0                                       ; combout          ;
 ; |Term_BCDcal|WideOr19~0                                       ; |Term_BCDcal|WideOr19~0                                       ; combout          ;
 ; |Term_BCDcal|WideOr18~0                                       ; |Term_BCDcal|WideOr18~0                                       ; combout          ;
@@ -199,6 +207,16 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |Term_BCDcal|WideOr37~0                                       ; |Term_BCDcal|WideOr37~0                                       ; combout          ;
 ; |Term_BCDcal|WideOr36~0                                       ; |Term_BCDcal|WideOr36~0                                       ; combout          ;
 ; |Term_BCDcal|WideOr35~0                                       ; |Term_BCDcal|WideOr35~0                                       ; combout          ;
+; |Term_BCDcal|Equal1~0                                         ; |Term_BCDcal|Equal1~0                                         ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[3]   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[3]   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[2]   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[2]   ; combout          ;
+; |Term_BCDcal|HEX1~14                                          ; |Term_BCDcal|HEX1~14                                          ; combout          ;
+; |Term_BCDcal|HEX1~15                                          ; |Term_BCDcal|HEX1~15                                          ; combout          ;
+; |Term_BCDcal|HEX1~16                                          ; |Term_BCDcal|HEX1~16                                          ; combout          ;
+; |Term_BCDcal|HEX1~17                                          ; |Term_BCDcal|HEX1~17                                          ; combout          ;
+; |Term_BCDcal|HEX1~18                                          ; |Term_BCDcal|HEX1~18                                          ; combout          ;
+; |Term_BCDcal|HEX1~19                                          ; |Term_BCDcal|HEX1~19                                          ; combout          ;
+; |Term_BCDcal|HEX1~20                                          ; |Term_BCDcal|HEX1~20                                          ; combout          ;
 ; |Term_BCDcal|HEX0[6]                                          ; |Term_BCDcal|HEX0[6]                                          ; padio            ;
 ; |Term_BCDcal|HEX0[5]                                          ; |Term_BCDcal|HEX0[5]                                          ; padio            ;
 ; |Term_BCDcal|HEX0[4]                                          ; |Term_BCDcal|HEX0[4]                                          ; padio            ;
@@ -241,23 +259,24 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |Term_BCDcal|HEX7[2]                                          ; |Term_BCDcal|HEX7[2]                                          ; padio            ;
 ; |Term_BCDcal|HEX7[1]                                          ; |Term_BCDcal|HEX7[1]                                          ; padio            ;
 ; |Term_BCDcal|HEX7[0]                                          ; |Term_BCDcal|HEX7[0]                                          ; padio            ;
-; |Term_BCDcal|SW[3]                                            ; |Term_BCDcal|SW[3]~corein                                     ; combout          ;
+; |Term_BCDcal|LEDG[8]                                          ; |Term_BCDcal|LEDG[8]                                          ; padio            ;
+; |Term_BCDcal|SW[6]                                            ; |Term_BCDcal|SW[6]~corein                                     ; combout          ;
 ; |Term_BCDcal|SW[16]                                           ; |Term_BCDcal|SW[16]~corein                                    ; combout          ;
-; |Term_BCDcal|SW[11]                                           ; |Term_BCDcal|SW[11]~corein                                    ; combout          ;
-; |Term_BCDcal|SW[2]                                            ; |Term_BCDcal|SW[2]~corein                                     ; combout          ;
-; |Term_BCDcal|SW[1]                                            ; |Term_BCDcal|SW[1]~corein                                     ; combout          ;
-; |Term_BCDcal|SW[8]                                            ; |Term_BCDcal|SW[8]~corein                                     ; combout          ;
+; |Term_BCDcal|SW[5]                                            ; |Term_BCDcal|SW[5]~corein                                     ; combout          ;
 ; |Term_BCDcal|SW[0]                                            ; |Term_BCDcal|SW[0]~corein                                     ; combout          ;
-; |Term_BCDcal|SW[9]                                            ; |Term_BCDcal|SW[9]~corein                                     ; combout          ;
+; |Term_BCDcal|SW[1]                                            ; |Term_BCDcal|SW[1]~corein                                     ; combout          ;
+; |Term_BCDcal|SW[2]                                            ; |Term_BCDcal|SW[2]~corein                                     ; combout          ;
+; |Term_BCDcal|SW[3]                                            ; |Term_BCDcal|SW[3]~corein                                     ; combout          ;
 ; |Term_BCDcal|SW[10]                                           ; |Term_BCDcal|SW[10]~corein                                    ; combout          ;
+; |Term_BCDcal|SW[8]                                            ; |Term_BCDcal|SW[8]~corein                                     ; combout          ;
+; |Term_BCDcal|SW[9]                                            ; |Term_BCDcal|SW[9]~corein                                     ; combout          ;
+; |Term_BCDcal|SW[11]                                           ; |Term_BCDcal|SW[11]~corein                                    ; combout          ;
 ; |Term_BCDcal|SW[4]                                            ; |Term_BCDcal|SW[4]~corein                                     ; combout          ;
 ; |Term_BCDcal|SW[12]                                           ; |Term_BCDcal|SW[12]~corein                                    ; combout          ;
-; |Term_BCDcal|SW[6]                                            ; |Term_BCDcal|SW[6]~corein                                     ; combout          ;
-; |Term_BCDcal|SW[5]                                            ; |Term_BCDcal|SW[5]~corein                                     ; combout          ;
 ; |Term_BCDcal|SW[13]                                           ; |Term_BCDcal|SW[13]~corein                                    ; combout          ;
 ; |Term_BCDcal|SW[14]                                           ; |Term_BCDcal|SW[14]~corein                                    ; combout          ;
-; |Term_BCDcal|SW[7]                                            ; |Term_BCDcal|SW[7]~corein                                     ; combout          ;
 ; |Term_BCDcal|SW[15]                                           ; |Term_BCDcal|SW[15]~corein                                    ; combout          ;
+; |Term_BCDcal|SW[7]                                            ; |Term_BCDcal|SW[7]~corein                                     ; combout          ;
 +---------------------------------------------------------------+---------------------------------------------------------------+------------------+
 
 
@@ -267,58 +286,66 @@ The following table displays output ports that do not toggle to 0 during simulat
 +---------------------------------------------------------------+---------------------------------------------------------------+------------------+
 ; Node Name                                                     ; Output Port Name                                              ; Output Port Type ;
 +---------------------------------------------------------------+---------------------------------------------------------------+------------------+
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car~0         ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car~0         ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[1]~1      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[1]~1      ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[2]~2      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[2]~2      ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[3]~0 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[3]~0 ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[2]~1 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[2]~1 ; combout          ;
+; |Term_BCDcal|right[6]~0                                       ; |Term_BCDcal|right[6]~0                                       ; combout          ;
+; |Term_BCDcal|right[3]~1                                       ; |Term_BCDcal|right[3]~1                                       ; combout          ;
+; |Term_BCDcal|right[3]~2                                       ; |Term_BCDcal|right[3]~2                                       ; combout          ;
+; |Term_BCDcal|right[2]~3                                       ; |Term_BCDcal|right[2]~3                                       ; combout          ;
+; |Term_BCDcal|right[1]~4                                       ; |Term_BCDcal|right[1]~4                                       ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[1]~0      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[1]~0      ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[3]~2 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[3]~2 ; combout          ;
 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[1]   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[1]   ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car~3         ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car~3         ; combout          ;
-; |Term_BCDcal|Decoder1~0                                       ; |Term_BCDcal|Decoder1~0                                       ; combout          ;
-; |Term_BCDcal|Decoder1~1                                       ; |Term_BCDcal|Decoder1~1                                       ; combout          ;
-; |Term_BCDcal|Decoder1~2                                       ; |Term_BCDcal|Decoder1~2                                       ; combout          ;
-; |Term_BCDcal|Decoder1~3                                       ; |Term_BCDcal|Decoder1~3                                       ; combout          ;
-; |Term_BCDcal|WideOr1~0                                        ; |Term_BCDcal|WideOr1~0                                        ; combout          ;
-; |Term_BCDcal|Decoder1~4                                       ; |Term_BCDcal|Decoder1~4                                       ; combout          ;
-; |Term_BCDcal|Decoder1~5                                       ; |Term_BCDcal|Decoder1~5                                       ; combout          ;
-; |Term_BCDcal|Decoder1~6                                       ; |Term_BCDcal|Decoder1~6                                       ; combout          ;
-; |Term_BCDcal|WideOr3~0                                        ; |Term_BCDcal|WideOr3~0                                        ; combout          ;
-; |Term_BCDcal|WideOr6                                          ; |Term_BCDcal|WideOr6                                          ; combout          ;
-; |Term_BCDcal|Decoder1~7                                       ; |Term_BCDcal|Decoder1~7                                       ; combout          ;
-; |Term_BCDcal|WideOr4~0                                        ; |Term_BCDcal|WideOr4~0                                        ; combout          ;
-; |Term_BCDcal|WideOr5                                          ; |Term_BCDcal|WideOr5                                          ; combout          ;
-; |Term_BCDcal|WideOr4                                          ; |Term_BCDcal|WideOr4                                          ; combout          ;
-; |Term_BCDcal|WideOr3                                          ; |Term_BCDcal|WideOr3                                          ; combout          ;
-; |Term_BCDcal|Decoder1~8                                       ; |Term_BCDcal|Decoder1~8                                       ; combout          ;
-; |Term_BCDcal|WideOr0                                          ; |Term_BCDcal|WideOr0                                          ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|c_out~0       ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|c_out~0       ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[0]~0 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[0]~0 ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[2]   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[2]   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|WideOr0~0     ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|WideOr0~0     ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[3]~1      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[3]~1      ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[3]~2      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car[3]~2      ; combout          ;
+; |Term_BCDcal|right[4]~5                                       ; |Term_BCDcal|right[4]~5                                       ; combout          ;
 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[0]~0      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[0]~0      ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[1]~1      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[1]~1      ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[2]~1 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[2]~1 ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[1]~2 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[1]~2 ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[2]~2 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[2]~2 ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[1]~3 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[1]~3 ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[3]~0   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[3]~0   ; combout          ;
+; |Term_BCDcal|right[7]~6                                       ; |Term_BCDcal|right[7]~6                                       ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[2]~1      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[2]~1      ; combout          ;
 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[2]~2      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[2]~2      ; combout          ;
-; |Term_BCDcal|Decoder2~0                                       ; |Term_BCDcal|Decoder2~0                                       ; combout          ;
-; |Term_BCDcal|Decoder2~1                                       ; |Term_BCDcal|Decoder2~1                                       ; combout          ;
-; |Term_BCDcal|Decoder2~2                                       ; |Term_BCDcal|Decoder2~2                                       ; combout          ;
-; |Term_BCDcal|Decoder2~3                                       ; |Term_BCDcal|Decoder2~3                                       ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[2]~3      ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|car[2]~3      ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[3]   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[3]   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|c_out~0       ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|c_out~0       ; combout          ;
+; |Term_BCDcal|always2~0                                        ; |Term_BCDcal|always2~0                                        ; combout          ;
+; |Term_BCDcal|always1~0                                        ; |Term_BCDcal|always1~0                                        ; combout          ;
+; |Term_BCDcal|always1~1                                        ; |Term_BCDcal|always1~1                                        ; combout          ;
+; |Term_BCDcal|always1~2                                        ; |Term_BCDcal|always1~2                                        ; combout          ;
+; |Term_BCDcal|always1~3                                        ; |Term_BCDcal|always1~3                                        ; combout          ;
+; |Term_BCDcal|always1~4                                        ; |Term_BCDcal|always1~4                                        ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car~3         ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|car~3         ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[0]~0   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[0]~0   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[1]~1   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[1]~1   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[2]~2   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[2]~2   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[3]~3   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|sumBCD[3]~3   ; combout          ;
+; |Term_BCDcal|WideOr6~0                                        ; |Term_BCDcal|WideOr6~0                                        ; combout          ;
+; |Term_BCDcal|HEX0~0                                           ; |Term_BCDcal|HEX0~0                                           ; combout          ;
+; |Term_BCDcal|WideOr5~0                                        ; |Term_BCDcal|WideOr5~0                                        ; combout          ;
+; |Term_BCDcal|HEX0~1                                           ; |Term_BCDcal|HEX0~1                                           ; combout          ;
+; |Term_BCDcal|WideOr4~0                                        ; |Term_BCDcal|WideOr4~0                                        ; combout          ;
+; |Term_BCDcal|HEX0~2                                           ; |Term_BCDcal|HEX0~2                                           ; combout          ;
+; |Term_BCDcal|WideOr3~0                                        ; |Term_BCDcal|WideOr3~0                                        ; combout          ;
+; |Term_BCDcal|HEX0~3                                           ; |Term_BCDcal|HEX0~3                                           ; combout          ;
+; |Term_BCDcal|WideOr2~0                                        ; |Term_BCDcal|WideOr2~0                                        ; combout          ;
+; |Term_BCDcal|HEX0~4                                           ; |Term_BCDcal|HEX0~4                                           ; combout          ;
+; |Term_BCDcal|WideOr1~0                                        ; |Term_BCDcal|WideOr1~0                                        ; combout          ;
+; |Term_BCDcal|HEX0~5                                           ; |Term_BCDcal|HEX0~5                                           ; combout          ;
+; |Term_BCDcal|WideOr0~0                                        ; |Term_BCDcal|WideOr0~0                                        ; combout          ;
+; |Term_BCDcal|HEX0~6                                           ; |Term_BCDcal|HEX0~6                                           ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[0]   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[0]   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[0]~1   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[0]~1   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[1]~2   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[1]~2   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[2]~3   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[2]~3   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[3]~4   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|sumBCD[3]~4   ; combout          ;
+; |Term_BCDcal|WideOr13~0                                       ; |Term_BCDcal|WideOr13~0                                       ; combout          ;
 ; |Term_BCDcal|WideOr12~0                                       ; |Term_BCDcal|WideOr12~0                                       ; combout          ;
-; |Term_BCDcal|Decoder2~4                                       ; |Term_BCDcal|Decoder2~4                                       ; combout          ;
-; |Term_BCDcal|WideOr8~0                                        ; |Term_BCDcal|WideOr8~0                                        ; combout          ;
-; |Term_BCDcal|WideOr8~1                                        ; |Term_BCDcal|WideOr8~1                                        ; combout          ;
-; |Term_BCDcal|WideOr8~2                                        ; |Term_BCDcal|WideOr8~2                                        ; combout          ;
-; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[3]~3 ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[3]~3 ; combout          ;
-; |Term_BCDcal|Decoder2~5                                       ; |Term_BCDcal|Decoder2~5                                       ; combout          ;
-; |Term_BCDcal|Decoder2~6                                       ; |Term_BCDcal|Decoder2~6                                       ; combout          ;
-; |Term_BCDcal|WideOr10~0                                       ; |Term_BCDcal|WideOr10~0                                       ; combout          ;
-; |Term_BCDcal|WideOr13                                         ; |Term_BCDcal|WideOr13                                         ; combout          ;
-; |Term_BCDcal|Decoder2~7                                       ; |Term_BCDcal|Decoder2~7                                       ; combout          ;
 ; |Term_BCDcal|WideOr11~0                                       ; |Term_BCDcal|WideOr11~0                                       ; combout          ;
-; |Term_BCDcal|WideOr12                                         ; |Term_BCDcal|WideOr12                                         ; combout          ;
-; |Term_BCDcal|WideOr11                                         ; |Term_BCDcal|WideOr11                                         ; combout          ;
-; |Term_BCDcal|WideOr10                                         ; |Term_BCDcal|WideOr10                                         ; combout          ;
-; |Term_BCDcal|Decoder2~8                                       ; |Term_BCDcal|Decoder2~8                                       ; combout          ;
-; |Term_BCDcal|WideOr7                                          ; |Term_BCDcal|WideOr7                                          ; combout          ;
+; |Term_BCDcal|WideOr10~0                                       ; |Term_BCDcal|WideOr10~0                                       ; combout          ;
+; |Term_BCDcal|WideOr9~0                                        ; |Term_BCDcal|WideOr9~0                                        ; combout          ;
+; |Term_BCDcal|WideOr8~0                                        ; |Term_BCDcal|WideOr8~0                                        ; combout          ;
+; |Term_BCDcal|WideOr7~0                                        ; |Term_BCDcal|WideOr7~0                                        ; combout          ;
 ; |Term_BCDcal|WideOr20~0                                       ; |Term_BCDcal|WideOr20~0                                       ; combout          ;
 ; |Term_BCDcal|WideOr19~0                                       ; |Term_BCDcal|WideOr19~0                                       ; combout          ;
 ; |Term_BCDcal|WideOr18~0                                       ; |Term_BCDcal|WideOr18~0                                       ; combout          ;
@@ -347,6 +374,16 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |Term_BCDcal|WideOr37~0                                       ; |Term_BCDcal|WideOr37~0                                       ; combout          ;
 ; |Term_BCDcal|WideOr36~0                                       ; |Term_BCDcal|WideOr36~0                                       ; combout          ;
 ; |Term_BCDcal|WideOr35~0                                       ; |Term_BCDcal|WideOr35~0                                       ; combout          ;
+; |Term_BCDcal|Equal1~0                                         ; |Term_BCDcal|Equal1~0                                         ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[3]   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd1|temp_out[3]   ; combout          ;
+; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[2]   ; |Term_BCDcal|Calculator:cal|Full_Adder:fulladd2|temp_out[2]   ; combout          ;
+; |Term_BCDcal|HEX1~14                                          ; |Term_BCDcal|HEX1~14                                          ; combout          ;
+; |Term_BCDcal|HEX1~15                                          ; |Term_BCDcal|HEX1~15                                          ; combout          ;
+; |Term_BCDcal|HEX1~16                                          ; |Term_BCDcal|HEX1~16                                          ; combout          ;
+; |Term_BCDcal|HEX1~17                                          ; |Term_BCDcal|HEX1~17                                          ; combout          ;
+; |Term_BCDcal|HEX1~18                                          ; |Term_BCDcal|HEX1~18                                          ; combout          ;
+; |Term_BCDcal|HEX1~19                                          ; |Term_BCDcal|HEX1~19                                          ; combout          ;
+; |Term_BCDcal|HEX1~20                                          ; |Term_BCDcal|HEX1~20                                          ; combout          ;
 ; |Term_BCDcal|HEX0[6]                                          ; |Term_BCDcal|HEX0[6]                                          ; padio            ;
 ; |Term_BCDcal|HEX0[5]                                          ; |Term_BCDcal|HEX0[5]                                          ; padio            ;
 ; |Term_BCDcal|HEX0[4]                                          ; |Term_BCDcal|HEX0[4]                                          ; padio            ;
@@ -389,23 +426,24 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |Term_BCDcal|HEX7[2]                                          ; |Term_BCDcal|HEX7[2]                                          ; padio            ;
 ; |Term_BCDcal|HEX7[1]                                          ; |Term_BCDcal|HEX7[1]                                          ; padio            ;
 ; |Term_BCDcal|HEX7[0]                                          ; |Term_BCDcal|HEX7[0]                                          ; padio            ;
-; |Term_BCDcal|SW[3]                                            ; |Term_BCDcal|SW[3]~corein                                     ; combout          ;
+; |Term_BCDcal|LEDG[8]                                          ; |Term_BCDcal|LEDG[8]                                          ; padio            ;
+; |Term_BCDcal|SW[6]                                            ; |Term_BCDcal|SW[6]~corein                                     ; combout          ;
 ; |Term_BCDcal|SW[16]                                           ; |Term_BCDcal|SW[16]~corein                                    ; combout          ;
-; |Term_BCDcal|SW[11]                                           ; |Term_BCDcal|SW[11]~corein                                    ; combout          ;
-; |Term_BCDcal|SW[2]                                            ; |Term_BCDcal|SW[2]~corein                                     ; combout          ;
-; |Term_BCDcal|SW[1]                                            ; |Term_BCDcal|SW[1]~corein                                     ; combout          ;
-; |Term_BCDcal|SW[8]                                            ; |Term_BCDcal|SW[8]~corein                                     ; combout          ;
+; |Term_BCDcal|SW[5]                                            ; |Term_BCDcal|SW[5]~corein                                     ; combout          ;
 ; |Term_BCDcal|SW[0]                                            ; |Term_BCDcal|SW[0]~corein                                     ; combout          ;
-; |Term_BCDcal|SW[9]                                            ; |Term_BCDcal|SW[9]~corein                                     ; combout          ;
+; |Term_BCDcal|SW[1]                                            ; |Term_BCDcal|SW[1]~corein                                     ; combout          ;
+; |Term_BCDcal|SW[2]                                            ; |Term_BCDcal|SW[2]~corein                                     ; combout          ;
+; |Term_BCDcal|SW[3]                                            ; |Term_BCDcal|SW[3]~corein                                     ; combout          ;
 ; |Term_BCDcal|SW[10]                                           ; |Term_BCDcal|SW[10]~corein                                    ; combout          ;
+; |Term_BCDcal|SW[8]                                            ; |Term_BCDcal|SW[8]~corein                                     ; combout          ;
+; |Term_BCDcal|SW[9]                                            ; |Term_BCDcal|SW[9]~corein                                     ; combout          ;
+; |Term_BCDcal|SW[11]                                           ; |Term_BCDcal|SW[11]~corein                                    ; combout          ;
 ; |Term_BCDcal|SW[4]                                            ; |Term_BCDcal|SW[4]~corein                                     ; combout          ;
 ; |Term_BCDcal|SW[12]                                           ; |Term_BCDcal|SW[12]~corein                                    ; combout          ;
-; |Term_BCDcal|SW[6]                                            ; |Term_BCDcal|SW[6]~corein                                     ; combout          ;
-; |Term_BCDcal|SW[5]                                            ; |Term_BCDcal|SW[5]~corein                                     ; combout          ;
 ; |Term_BCDcal|SW[13]                                           ; |Term_BCDcal|SW[13]~corein                                    ; combout          ;
 ; |Term_BCDcal|SW[14]                                           ; |Term_BCDcal|SW[14]~corein                                    ; combout          ;
-; |Term_BCDcal|SW[7]                                            ; |Term_BCDcal|SW[7]~corein                                     ; combout          ;
 ; |Term_BCDcal|SW[15]                                           ; |Term_BCDcal|SW[15]~corein                                    ; combout          ;
+; |Term_BCDcal|SW[7]                                            ; |Term_BCDcal|SW[7]~corein                                     ; combout          ;
 +---------------------------------------------------------------+---------------------------------------------------------------+------------------+
 
 
@@ -422,23 +460,21 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Apr 06 11:04:40 2019
+    Info: Processing started: Thu Apr 11 15:59:17 2019
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Term_BCDcal -c Term_BCDcal
-Info: Using vector source file "C:/Users/ESCi/Documents/Source/COSE221-01-TermProject1/ForSimulate/28+7=35.vwf"
-Warning: Ignored node in vector source file. Can't find corresponding node name "~ALTERA_ASDO_DATA1~" in design.
-Warning: Ignored node in vector source file. Can't find corresponding node name "~ALTERA_DATA0~" in design.
-Warning: Ignored node in vector source file. Can't find corresponding node name "~ALTERA_DCLK~" in design.
-Warning: Ignored node in vector source file. Can't find corresponding node name "~ALTERA_FLASH_nCE_nCSO~" in design.
-Warning: Ignored node in vector source file. Can't find corresponding node name "~ALTERA_nCEO~" in design.
+Info: Using vector source file "C:/Users/ESCi/Documents/Source/COSE221-01-TermProject1/ForSimulate/64+71=over.vwf"
+Warning: Compiler packed, optimized or synthesized away node "~ASDO~". Ignored vector source file node.
+Warning: Compiler packed, optimized or synthesized away node "~LVDS150p/nCEO~". Ignored vector source file node.
+Warning: Compiler packed, optimized or synthesized away node "~nCSO~". Ignored vector source file node.
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
 Info: Simulation coverage is       0.00 %
 Info: Number of transitions in simulation is 0
-Info: Quartus II Simulator was successful. 0 errors, 5 warnings
+Info: Quartus II Simulator was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 180 megabytes
-    Info: Processing ended: Sat Apr 06 11:04:41 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Processing ended: Thu Apr 11 15:59:17 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
